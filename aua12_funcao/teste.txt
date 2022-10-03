@@ -1,0 +1,64 @@
+land
+louis
+combate
+meloni
+fernando
+diniz
+duquesa
+sociopata
+tom
+brady
+
+Éosguri
+Parisanduíche
+Camisa 
+SeusMadrugas
+TimedosVingadores
+HodoRush
+Chubakitos
+CanelasFrescas
+Cangaços
+OsMoscasFC
+PeladeirosdeSegunda
+AmigosFC
+HooligansFC
+AMáfia
+InterdeMelô
+DoSerasanãoPassa
+NoFearFC
+OsSamurais
+Venenosos
+CheersForBeers
+LosTonicos
+ChiliPeppersFC
+PotatosFC
+CorsáriosFC
+FCSPAM
+ParciaisFC
+OsImundos
+OsPredadoresFC
+TimedosSonhosFC
+RaiosFC
+BarõesFC
+BocaSeniors
+OsEscolhidos
+RatosDoentes
+Swatdobairro
+OsAstecas
+OsDefensoresFC
+OsManíacosFC
+OsMaestrosFC
+Revolution
+-----------------
+vetor[40][40] - cheia
+i= -1;
+vetortime[40][40] -vazio
+
+sortear 1 numero de 0 a 39 == aux
+
+i++  
+
+vetor[aux] == vetor[i]
+
+
+
