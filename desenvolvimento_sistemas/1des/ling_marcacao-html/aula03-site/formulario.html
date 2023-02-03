@@ -1,0 +1,103 @@
+<DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title> Aula 03 </title>
+
+	</head>
+
+	<body>
+		<!-- formulário 
+		action => para onde os dados do formulario irão
+		method=> maneira que será enviado
+		-->
+
+		<form action="" method= ""> 	
+
+			<!-- TAG label etiqueta para o input/  título do campo
+				for=> identifica o input que pertencer a label 
+			-->
+			<label for="nome">Nome Completo</label>  
+		
+			<!-- TAG input- Entrada de dados
+				type=> Define o tipo de dado
+				id=> Identificador dp input/ nome 
+				placeholder=> Texto de identificação do input/ aparece oq vc quer q a pessoa digite no campo 
+			-->
+			<input type="text" id="nome" placeholder="Insira seu nome" required/> <br><br>
+	
+			<label for="datanasc">Data de Nascimento</label>
+			<input id="datanasc" type="date" /> <br><br>
+
+			<label for="indica">Você nos indicaria?</label>
+			<input id="indica" type="number" min="1" max="5" /> <br><br>
+
+			<label for="email">Email: </label>
+			<input id="email" type="email" placeholder="Informe seu E-mail"/> <br><br>
+
+			<label for="cor">Cor favorita</label>
+			<input id="cor" type="color" /> <br><br>
+
+			<label for="volume">Em qual volume você escuta música?(0 a 100) </label>
+			<input id="volume" type="range" min="0" max="100" /> <br><br>
+
+			
+			<!-- TAG fildset conjunto de campos-->
+			<fieldset>
+				<!-- TAG legend=> título do fildset -->
+				<legend> Gênero</legend>
+				<input type="radio" id="masc" name="genero"/>
+				<label  for ="masc"> Masculino</label>
+			
+				<input type="radio" id="fem" name="genero"/>
+				<label for="fem"> Feminino</label>
+
+				<input type="radio" id="outros" name="genero"/>
+				<label for="outros"> Outros</label>
+			
+			</fieldset> <br><br>
+			
+			<fieldset>
+				<legend> Lanche</legend>
+				<input type="checkbox" id="salada"/>
+				<label  for ="salada"> Salada</label>
+
+				<input type="checkbox" id="hambur"/>
+				<label  for ="hambur"> Hamburguer</label>
+
+				<input type="checkbox" id="molho"/>
+				<label  for ="molho"> Molho</label>
+								
+			</fieldset>
+			<br>
+		
+			<label  for ="info"> Informações Adicionais</label><br>
+			<textarea id="info"></textarea>
+			<br><br>
+
+			<label  for ="senha"> Senha</label>
+			<input id="senha" type="password"/>
+			<br><br>
+			
+			<label for="cidade">Informe a cidade</label> <br><br>
+			<select id="cidade">
+			
+				<option>Jaguariúna</option>
+				<option>Pedreira</option>
+				<option>Amparo</option>
+				<option> Holambra</option>
+				
+			</select>
+			<br><br>
+		
+			<input type="reset" value="Limpar Form"/>
+			<input type="submit"/>
+				
+		</form>
+
+	</body>
+
+
+</html>

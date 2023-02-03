@@ -1,0 +1,48 @@
+
+body{
+    width: 100vw;
+    height: 100vh ;
+}
+
+.circulo{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100px ;
+    background-color: blue;
+    position: absolute;
+}
+
+#c1 {
+
+    top: 0px;
+    left: 0px;
+    background-color: aqua;
+}
+
+#c2 {
+
+    top: 0px;
+    right: 0px;
+    background-color: brown;   
+}
+
+#c3 {
+
+    bottom: 0px;
+    left: 0px;
+    background-color: darkslateblue;
+}
+
+#c4 {
+    bottom: 0px;
+    right: 0px;
+    background-color: darkorange;
+}
+
+#c5 {
+
+    bottom: 50%;
+    left: 42%;
+   
+}

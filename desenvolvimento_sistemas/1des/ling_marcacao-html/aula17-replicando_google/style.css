@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("fundo.png");
+    background-size: cover;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+    overflow: hidden;
+   
+}
+section{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+#gmail{
+    color:white;
+}
+#imagens{
+    margin-left: 15px;
+    margin-right: 20px;
+    color: white;
+    
+}
+#gmail:hover{
+    text-decoration: underline;
+}
+#imagens:hover{
+    text-decoration: underline;
+}
+#menu-icon{
+    height: 15px;
+    margin-right: 20px;
+    transition: width 2s, height 2s, background-color 10s;
+    transition-delay: 2s;
+}
+#menu:checked ~ div {
+    right: 0;
+    
+}
+#menu{
+    display: none;
+}
+#menudrop {
+    width: 15vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, .5);
+    position: absolute;
+    top:0;
+    right: -15vw;
+    /* display: none; */
+    color: white;   
+    transition: right 5s;
+}
+ul{
+    list-style: none ;
+}
+.card-pesquisa{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.componente{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#lupa{
+    position: absolute;
+    left: 10px;
+}
+#input{
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 0px 0px 50px;
+}
+#microfone{
+    height: 20px;
+    position: absolute;
+    right: 10px;
+}
+#img-card{
+    height: 30px;
+}
+.fundo{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.paginas{
+    width: 500px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#card:hover{
+    background-color: rgba(255, 255, 255, 0.496);
+}
+
+#card:hover>#img-pontinho {
+
+    display: block;
+}
+
+#img-pontinho{
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top:0;
+    display: none;
+}
+
+p{
+    color:white;
+}

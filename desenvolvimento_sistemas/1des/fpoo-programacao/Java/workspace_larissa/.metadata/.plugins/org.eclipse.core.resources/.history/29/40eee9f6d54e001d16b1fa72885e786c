@@ -1,0 +1,52 @@
+package programa;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		float totImc = 0, totPeso = 0, totAlt= 0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		Paciente pacientes[] = new Paciente[10];
+		
+				
+		for(int i=0; i<5; i++) {
+			pacientes[i] = new Paciente();
+			
+			System.out.printf("\nDigite o %dº nome: ", i+1);
+			pacientes[i].nome = scan.next();
+			
+			System.out.printf("\nDigite a altura: ");
+			pacientes[i].altura = scan.nextFloat();
+			
+			System.out.printf("\nDigite o peso: ");
+			pacientes[i].peso = scan.nextFloat();
+			
+			totImc += pacientes[i].imc();
+			totPeso += pacientes[i].peso;
+			totAlt += pacientes[i].altura;
+		}
+		
+		
+		//processamento
+		float mediaImc = totImc / 10f;
+		float mediaPeso = totPeso / 10f;
+		float mediaAltura = totAlt / 10f;
+		
+		System.out.printf("\nPaciente\tAltura\tPeso\tIMC\tDiagnostico");
+		
+		for (int i=0; i<5; i++) {
+			
+			System.out.printf("\n%s\t\t%.2f\t%.2f\t%.2f\t%s", pacientes[i].nome, pacientes[i].altura, pacientes[i].peso, pacientes[i].imc(), pacientes[i].diagnostico());
+		}
+		
+		System.out.printf("\nMédia IMC\tMédia Altura\tMédia Peso");
+		System.out.printf("\n%.2f\t%.2f\t%.2f", mediaImc, mediaPeso, mediaAltura);
+	}
+
+
+
+}

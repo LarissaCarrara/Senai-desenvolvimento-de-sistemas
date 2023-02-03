@@ -1,0 +1,75 @@
+CRIAR UM BUCKET
+
+Os buckets são os contêineres básicos que armazenam seus dados no Cloud Storage.
+1- Siga as instruções abaixo para criar um bucket: 
+No Console do Cloud, acesse Menu de navegação > Cloud Storage > Navegador.
+
+2- Clique em Criar bucket:
+
+3- Insira as informações do bucket e clique em Continuar para concluir cada etapa:
+Crie um nome: insira um nome exclusivo para o bucket. Neste laboratório, você pode usar o ID do projeto como o nome do bucket porque esse código sempre é único.
+Escolha Região como o Tipo de localização e us-east1 (Carolina do Sul) como o Local.
+Selecione Padrão como a classe de armazenamento padrão.
+Escolha Uniforme para Controle de acesso.
+
+4- Clique em Criar.
+
+FAZER UPLOAD DE UM OBJETO NO BUCKET
+
+1- Clique com o botão direito na imagem e faça o download no seu computador. Depois disso, renomeie a imagem como kitten.png.
+
+2- Na página do navegador do Cloud Storage, clique no nome do bucket que você criou.
+
+3- Na guia Objetos, clique em Fazer upload de arquivos.
+
+4- Na caixa de diálogo do arquivo, selecione o material que você salvou no seu computador.
+
+5- Verifique se o nome dele é kitten.png. Se não for, clique no ícone de três pontos do seu arquivo, selecione Renomear no menu suspenso e mude o nome para kitten.png.
+
+
+COMPARTILHE UM BUCKET PUBLICAMENTE
+1- Clique na guia Permissões acima da lista de arquivos.
+
+2- Verifique se a visualização está definida como Principais. Clique em Adicionar para ver o painel Adicionar principais.
+
+3- Na caixa Novas principais, digite allUsers.
+
+4- No menu suspenso Selecionar um papel, clique em Cloud Storage > Leitor de objetos do Storage.
+
+5- Clique em Salvar.
+
+6- Na janela Você quer mesmo tornar esse recurso público?, clique em Permitir acesso público.
+
+CRIE PASTAS
+1- Na guia Objetos, clique em Criar pasta.
+
+2- Digite folder1 para Nome e clique em Criar.
+
+Você verá a pasta no bucket com uma imagem de um ícone de pasta para distingui-la dos objetos.
+
+Crie uma subpasta e faça o upload de um arquivo para ela:
+
+1- Clique em folder1.
+
+2- Clique em Criar pasta.
+
+3- Digite folder2 para Nome e clique em Criar.
+
+4- Clique em folder2.
+
+5-Clique em Fazer o upload dos arquivos.
+
+6- Na caixa de diálogo de arquivo, navegue até a captura de tela que você fez download e selecione-a.
+
+EXCLUA UMA PASTA
+1- Clique na seta ao lado de Detalhes do bucket para retornar ao nível do bucket.
+
+2- Selecione o bucket.
+
+3- Marque a caixa de seleção ao lado de folder1.
+
+4- Clique no botão Excluir.
+
+5- Na janela mostrada, digite DELETE para confirmar a exclusão da pasta.
+
+6- Clique em Excluir para remover permanentemente a pasta e todos os objetos e subpastas nela.

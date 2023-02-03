@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+p {
+    color: white;
+}
+
+#texto {
+    color: white;
+    font-family: 'Silkscreen', 'Lucida Sans';
+    font-size: 32px;
+}
+.titulo {
+    color: white;
+    font-family: 'Verdana';
+    background-color: rgba(112, 101, 161, 0.6);
+    width: 500px;
+    height: 500px;
+    border: 2px dashed;
+    border-radius: 15px; /*arredonda a borda */
+    border-width: 3px; /*largura da borda */
+
+    /*groove borda com sombra, dashed traços, inset ou outset */
+}
+
+body {
+    background-image: url(./asets/fundo.png);
+    background-repeat: no-repeat;
+     background-size: cover;  /*Deixa a imagem no tamanho da tela */
+}

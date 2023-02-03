@@ -1,0 +1,15 @@
+package padrao;
+
+public class Venda {
+
+	float preco;
+	int qtd;
+	String nome;
+	
+	float Subtotal() {
+		
+		return preco * qtd;
+	}
+	
+
+}

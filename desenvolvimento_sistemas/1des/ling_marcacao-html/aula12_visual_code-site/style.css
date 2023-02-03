@@ -1,0 +1,91 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+  
+    
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+#imglogo {
+    width: 40px;
+}
+#textologo {
+    margin-left: 5px;
+    width: 40px;
+    font-size: 25px;
+}
+
+.botoes > ul{
+    display: flex;
+    align-items: center;
+
+}
+ul {
+    list-style: none;
+}
+
+ul > li {
+    margin: 0px 20px 0px 0px;
+    padding: 3px;
+    font-size: 25px;
+}
+
+ul > li:hover {
+
+    color: rgb(178, 178, 178);
+    
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 40vh;
+   
+
+}
+
+
+
+
+.imagem {
+
+    width: 20%;
+}
+
+.texto {
+
+    text-align:justify;
+    margin: 30px;
+}
+
+.lorem {
+
+    width: 20%;
+    font-size: 20px;
+}
+.botao {
+    width: 100px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+

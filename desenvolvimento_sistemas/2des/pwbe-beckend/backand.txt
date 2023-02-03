@@ -1,0 +1,9 @@
+node -v / node --version  //verificar versão
+npm -v
+
+
+npm init  //inicializa o projeto e cria o json
+npm i express //instala o express
+
+npm i nodemon -g  (em casa, só uma vez)
+nodemon index.js (inicia o live server)

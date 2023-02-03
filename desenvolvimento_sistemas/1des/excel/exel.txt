@@ -1,0 +1,30 @@
+EXEL
+
+=ALEATORIOENTRE(min;max)
+PROCV(oq; onde; coluna resposta (num);verdadeiro/falso) //procura um valor em uma coluna (verticalmente)
+se for arrastar a celula para copiar é preciso congelar os dados da fórmula f4
+
+=truncar(diasdevida/365)
+
+=MÁXIMO()
+
+=MÍNIMO()
+
+ palavra;  =cont.se(de onde até onde; palavra/numero) //conta a qtd de palavras semelhantes
+
+=se(condição;for verdadeira retoena "palavra"; se(condicao; for verdadeira retorna "palavra3"; se for falta retorna "palavra3"
+
+=médiase(de onde até onde; divide pelo q)
+
+=MAIOR (matriz, xº maior)
+=MENOR (matrix, xº menor)
+
+=hoje() (da para somar com numeros, para vencimento)
+ctrl ; para travar a celula
+
+=aleatorio() (num aleatorio)
+
+inteligencia>conhecimento>informação>dado
+
+=somase(coluna q vai procurar; oq vai prucurar; e quais linhas irá somar)
+

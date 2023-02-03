@@ -1,0 +1,32 @@
+package ex1;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Formulario extends JFrame{
+
+	private static final long serialVersionUID = 1L;
+	JPanel painel;
+	JLabel rotuloNome, rotuloIdade, rotuloResultado;
+	Formulario(){
+		
+		setTitle("Entrada, Processamento e Saída");
+		setBounds(50,50,600,400);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		painel = new JPanel();
+		setContentPane(painel); 
+		setLayout(null);
+	
+	rotuloNome = new JLabel ("Nome: ");
+	rotuloNome.setBounds(20,20,200,30);
+	
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Esse programa está funcionando");
+		new Formulario().setVisible(true);
+		
+	}
+
+}

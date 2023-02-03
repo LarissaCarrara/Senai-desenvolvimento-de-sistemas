@@ -1,0 +1,22 @@
+package notas01;
+
+public class Boletim {
+
+	String aluno;
+	float portugues;
+	float matematica;
+	float ciencias;
+	float media;
+
+	
+	//métodos
+	float media() {
+		return (portugues + matematica + ciencias)/3;
+	}
+
+	System.out.printf("Aluno(a): %s \\t Port. \\t Math. \\t Cienc. \\t Médias:");
+	
+	public String toString() {
+		return String.format( "\n %s \t %.2f ", aluno, media());
+	}
+}

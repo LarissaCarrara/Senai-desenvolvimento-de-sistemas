@@ -1,0 +1,127 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+
+    display: flex;
+
+}
+#um {
+
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(122, 155, 199);
+    display: flex;
+    align-items: center;
+   
+    
+    
+
+    
+}
+#dois {
+
+    width: 20vw;
+    height: 80vh;
+    background-color: rgb(129, 18, 18);
+ 
+    
+
+}
+
+#tres {
+
+    width: 80vw;
+    height: 80vh;
+    background-color: cornflowerblue;
+}
+
+
+ #menuprincipal {
+    display: flex;
+    list-style: none;
+    
+ }
+
+ img {
+    width: 55%;
+    height: 20%;
+ }
+
+ #divmenu{
+    width: 3%;
+    margin: 2%;
+    text-align: center;
+
+    /* Para estruturas maiores - 
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+   
+ }
+ li {
+    margin: 0.2%;
+    padding:5px ;
+   
+ }
+
+ #home {
+    border: 1px solid black;
+    
+   
+ }
+
+ #sobrenos {
+
+    width: 50%;
+    border: 1px solid black;
+ } 
+
+ #faleconosco {
+    width: 200px;
+    border: 1px solid black;
+ }
+
+#home:hover {
+
+    text-decoration:underline white;
+}
+
+#sobrenos:hover {
+    text-decoration: underline white;
+
+}
+
+#faleconosco:hover {
+    text-decoration: underline white;
+
+}
+
+#quadrado3 {
+
+    width: 60%;
+    height: 40%;
+    background-color: rgb(161, 127, 255);
+    margin: 5%;
+    
+}
+
+#menu {
+
+    margin: 10%;
+    padding-top: 5%;
+}
+
+#menu1:hover > #submenu1{
+
+    
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: block;
+}
+
+#submenu1 {
+    display: none;
+}

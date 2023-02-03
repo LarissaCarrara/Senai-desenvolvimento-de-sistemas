@@ -1,0 +1,27 @@
+package notas01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Boletim bo[] = new Boletim[10];
+
+		bo[0] = new Boletim("Ricardo", 7 , 7.5f, 8);
+		bo[1] = new Boletim("Carlos", 6 , 8.5f, 7);
+		bo[2] = new Boletim("Andreia", 8 , 8.5f, 9);
+		bo[3] = new Boletim("Roberto", 7 , 6.5f, 8);
+		bo[4] = new Boletim("Larissa", 10 , 10 , 10);
+		
+		
+	
+		
+		System.out.printf("Aluno(a): \t Port. \t Math. \t Cienc.\t Medias:");
+		
+		for (int i=0; i<5; i++) {
+
+			System.out.printf(bo[i].toString());
+		}
+		
+	}
+
+}

@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+header {
+
+    height: 7vw;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.icone{
+
+    margin-left: 200px;
+}
+
+form{
+    margin: 200px;
+    display: flex;
+    align-items:center ;
+}
+#pesquisa {
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    /* background-image: url("lupa.png"); */
+}
+
+#lupa{
+    height: 36px;
+    background-color: rgb(228, 197, 94);
+    border-radius:5px;
+  
+}
+
+.minhaconta{
+    display: flex;
+    align-items: center;
+
+}
+
+#imgsair{
+    height: 30px;
+}
+
+#textsair{
+    margin-left: 5px;
+    color: white;
+}
+
+.divnome{
+    
+    height: 6vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#sec{
+    margin-left: 200px ;
+}
+#sec:hover{
+    color:rgb(228, 97, 97);
+}
+
+#s{
+    color: black;
+    margin-left: 70px;
+}
+#s:hover{
+    color: rgb(228, 97, 97);
+}
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    background-image: url("img-jogo.jpg");
+    background-position: center;  
+    position: relative; 
+}
+.card{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+    position: absolute;
+}
+#imagemjogo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.cardimg{
+    margin-left: 400px;
+    height: 50%;
+    width: 13%;
+    background-image: url("cdjogo.png");
+    background-position: center;
+    background-size: contain;
+    z-index: 99;
+   
+}
+
+.cardtext{
+    color: white;
+    font-size: 25px;
+    z-index: 99;
+}
+
+#botao{
+    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(66, 65, 65);
+    color: white;
+}
+
+#botao:hover{
+    color: rgb(228, 97, 97);
+}
+
+#jogos{
+    width: 100vw;
+    height: 45vh;
+    background-color: white;
+    display: flex;
+}
+.divjogo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 150px;
+    height: 300px;
+
+}
+.divjogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 150px;
+    height: 300px;
+
+}
+#imgjogo{
+    height: 200px;
+    width: 150px;
+}
+#jogo{
+    
+    width: 150px;
+    height: 200px;
+}
+#textjogo{
+    margin-top: 5px;
+    font-size: 17px;
+}
+#precojogo{
+    margin-top: 5px;
+    font-size: 15px;
+}
+#botaojogo{
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color:rgb(66, 65, 65);
+    color: white;
+}
+#botaojogo:hover{
+    color: rgb(228, 97, 97);
+}
+
+.divnumero{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
+#numero{
+    height: 30px;
+}

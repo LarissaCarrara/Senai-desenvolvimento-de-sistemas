@@ -1,0 +1,35 @@
+
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; /* Faz respeitar a estrutura, altura e largura */
+}
+
+header {
+
+    height: 10vh;
+    width: 100vw;
+    background-color: pink;
+}
+
+
+
+aside {
+    float: left;
+    width: 30vw;
+    height: 80vh;
+    background-color: orange;
+  
+}
+
+main {
+  
+    background-color: green;
+    width: 100vw;
+    height: 80vh;
+} 
+footer{
+
+    height: 10vh;
+    background-color: yellow;
+}

@@ -1,0 +1,38 @@
+DEFINA UMA ZONA DO COMPUTE PADRÃO
+A zona do Compute é um local regional próximo que armazena seus clusters e os recursos correspondentes. Por exemplo, us-central1-a é uma zona na região us-central1.
+
+Para definir a zona do Compute padrão como us-central1-a, inicie uma nova sessão no Cloud Shell e execute o seguinte comando:
+gcloud config set compute/zone us-central1-a
+
+CRIE UM CLUSTER DO GKE
+Um cluster consiste em pelo menos uma máquina mestre do cluster e diversas máquinas worker chamadas de nós. Os nós são instâncias de máquina virtual (VM) do Compute Engine que executam os processos do Kubernetes necessários para integrá-los ao cluster.
+
+Para criar um cluster, execute o comando abaixo, substituindo [CLUSTER-NAME] pelo nome que você escolher (por exemplo, my-cluster).
+gcloud container clusters create [CLUSTER-NAME]
+
+RECEBA AS CREDENCIAIS DE AUTENTICAÇÃO PARA O CLUSTER
+Depois de criar o cluster, você precisará de credenciais de autenticação para interagir com ele.
+
+Para autenticar o cluster, execute o comando abaixo, substituindo [CLUSTER-NAME] pelo nome do seu cluster:
+gcloud container clusters get-credentials [CLUSTER-NAME]
+
+IMPLANTE UM APLICATIVO NO CLUSTER
+Agora é possível implantar um aplicativo conteinerizado no cluster. Neste laboratório, você executará o hello-app no seu cluster.
+O GKE usa objetos do Kubernetes para criar e gerenciar os recursos do cluster. O Kubernetes fornece o objeto de implantação para implantar aplicativos sem estado como servidores da Web. Os objetos de serviço definem as regras e o balanceamento de carga para acessar seu aplicativo pela Internet.
+
+Para criar uma nova implantação hello-server da imagem do contêiner hello-app, execute este comando kubectl create:
+kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
+
+Para criar um serviço do Kubernetes, um recurso que permite expor o aplicativo ao tráfego externo, execute o comando kubectl expose a seguir:
+kubectl expose deployment hello-server --type=LoadBalancer --port 8080
+
+Para inspecionar o serviço hello-server, execute kubectl get:
+kubectl get service
+
+Para visualizar o aplicativo no navegador da Web, abra uma nova guia e digite o endereço a seguir, substituindo [EXTERNAL IP] pelo EXTERNAL-IP do hello-server.
+http://[EXTERNAL-IP]:8080
+
+EXCLUA O CLUSTER
+Para excluir o cluster, execute este comando:
+gcloud container clusters delete [CLUSTER-NAME]
+Quando solicitado, digite Y para confirmar.

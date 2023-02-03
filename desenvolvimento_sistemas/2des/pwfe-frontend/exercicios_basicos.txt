@@ -1,0 +1,60 @@
+JAVA SCRIPT
+
+EX1- Desenvolva um programa que leia três variáveis (a, b, c) e resolva a expressão: ( a + b ) / c.
+
+let a = parseInt(prompt("insira um número");
+let b = parseInt(prompt("insira um número");
+let c = parseInt(prompt("insira um número");
+
+let soma = (a + b) / c;
+console.log(soma);
+
+
+EX2- Desenvolva um programa que leia a velocidade de um carro (km/h) e a distância a ser percorrida (km) por ele. Calcule e apresente na tela, quanto tempo (horas) será necessário para o carro percorrer a distância informada.
+
+let velo = parseInt(prompt("Digite a velocidade do carro"));
+let km= parseInt(prompt("Digite a distância percorrida"));
+
+let horas = velo/km;
+alert(horas);
+
+EX3- Desenvolva um programa que leia o nome e o salário de uma pessoa, depois leia o valor do índice percentual (%) de reajuste do salário. Calcule e apresente na tela, o valor do novo salário e o nome da pessoa.
+
+let nome= prompt("Digite o nome");
+let salario = parseInt(prompt("Digite o salário"));
+let indice = parseInt(prompt("Digite o indice percentual (%) de reajuste do salário"));
+
+let indic_reajuste = indice/100;
+let salario_final = salario + salario * indic_reajuste;
+alert(salario_final);
+
+EX4- Desenvolva um programa que leia o nome de um time de futebol, o número de vitórias e o número de empates. O programa deverá calcular e apresentar na tela, o nome do time e o total de pontos. Lembrando que a vitória vale 3 pontos e o empate vale 1 ponto.
+
+let time = prompt("Digite o nome do time");
+let vitorias = parseInt(prompt("Digite o número de vitórias do time"));
+let empates = parseInt(prompt("Digite o número de empates do time"));
+
+let pontos_vit = 3 * vitorias;
+let pontos_emp = empates;
+let pontos_total = pontos_vit + pontos_emp;
+alert(`time: ${time} \n pontos: ${pontos_total}`);
+
+EX5- Desenvolva um programa que leia um número ”n” inteiro, positivo e diferente de zero e apresente na tela: n – 1, e também n + 1.
+
+let num = parseInt(prompt("Digite um número inteiro"));
+
+let mais = num + 1;
+let menos = num - 1;
+
+alert(mais + " " + menos);
+
+EX6- Sabendo-se que a velocidade de cruzeiro de um avião 747-300 é de 900 km/h, faça um programa que leia uma distância (km), calcule e apresente na tela, quanto tempo (horas) será necessário para um 747-300 sobrevoar a distância informada.
+
+let distancia = parseInt(prompt("Digite a distância percorrida pelo avião"));
+
+horas = distancia/900;
+alert("Irá demorar " + horas + " horas");
+
+EX7- Um caminhão consegue transportar 18 toneladas de laranjas em uma viagem que faz entre a fazenda e a fábrica de suco de laranja. Um alqueire de terra produz em média 250 toneladas de laranjas. Faça um programa que leia quantos caminhões e quantos alqueires uma fazenda produtora de laranjas possui, calcule e apresente na tela quantas viagens de caminhão serão necessárias para transportar toda a colheita de laranjas.
+
+let alqueires = parseInt(prompt("Digite o número de alqueires existentes"));

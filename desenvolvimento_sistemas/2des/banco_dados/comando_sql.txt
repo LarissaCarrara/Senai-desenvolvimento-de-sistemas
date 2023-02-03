@@ -1,0 +1,49 @@
+SQL
+
+XAMPP(CMD) -> depois que inicializar o sql no painel
+cd..
+c:
+cd xampp
+cd mysql
+cd bin
+mysql -u root
+
+
+show databases - lista os bancos disponiveis
+describe nome_tabela
+alter 
+drop table nome_tabela
+use
+create
+
+DDL(CRUD)- Definição de dados
+create table nome_tabela(campos)
+
+alter table nome_tabela add campo - adicionar
+			drop campo - remover
+"	"	"	set campo- alterar
+
+DML (CRUD) - manipulação/gerenciamento de dados
+
+insert into nome_tabela()
+exemplo: INSERT INTO produtos(nome, descricao) VALUES ("tomada", "tomada 10A");
+
+select * from nome_tabela - ver os dados da tabela
+select * from nome_tabela where id = 2 //produto específico da tabela
+
+update nome_tabela set campos
+delete from nome_tabela
+UPDATE
+exemplo: UPDATE funcionarios SET nome = "Ivanilvo" WHERE matricula = 1;
+DELETE FROM nome_tabela WHERE id = 1
+
+FUNÇÕES
+SELECT CURDATE(); //data de hoje
+SELECT CURTIME(); //horario atual
+SELECT RAND(); //gera um num aleatório 
+
+WHERE
+SELECT * FROM produtos WHERE id =1;
+SELECT * FROM funcionarios WHERE matricula =1;
+SELECT * FROM acoes WHERE data ="2023-02-02";
+SELECT * FROM acoes WHERE data = CURDATE();

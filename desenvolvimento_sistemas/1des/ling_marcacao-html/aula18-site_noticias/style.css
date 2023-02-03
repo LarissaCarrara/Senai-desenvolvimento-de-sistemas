@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 1fr;
+    grid-template-areas: "header header header header"
+                         "section section section section"
+                         "main main main main"
+                         "footer footer footer footer" ;
+    overflow: auto;
+    
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(177, 37, 37);
+}
+
+h1{
+    color: white;
+}
+section{
+    grid-area: section;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+}
+#card{
+    background-color: antiquewhite;
+    margin: 10px;
+    background-size: contain;
+    /* background-size: cover ; */
+    display:flex;   
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.img {
+    transition: .5s;   
+    width: 100%;
+    height: 100%;
+    background-image: url("./not1.webp");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+#cardp:hover ~.img,
+#p1:hover ~.img,
+.img:hover {
+    top: -7.5%;
+    left: -7.5%;
+    width: 115%;
+    height: 115%;
+}
+
+#cardp{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.435); */
+    background-image: linear-gradient(transparent,  rgba(0, 0, 0, 0.806));
+    width: 100%;
+    height: 55%;
+    border-radius: 20px;
+    z-index: 2; 
+}
+
+#p1{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    margin-left: 15px;
+    margin: 20px;
+    z-index: 2; 
+}
+main{
+    grid-area: main;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 40px;
+}
+footer{
+    grid-area: footer;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1170px) {
+    body{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header header"
+        "section section"
+        "main main"
+        "footer footer" ;
+    }
+    section{
+        margin-top: 0;
+    }
+    main{
+        margin-bottom: 0;
+    }
+    #card{
+        height: 200px;
+
+    }
+    }
+
+    @media (max-width: 900px) {
+        body{
+            /* display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 4fr 4fr 1fr;
+             grid-template-areas: "header header "
+                                  "header header"
+                                  "section section" 
+                                  "section section"
+                                  "main main" 
+                                  "main main"
+                                  "footer footer" 
+                                  "footer footer" ; */
+                                  overflow: auto;
+        }
+        section{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "header header"
+            "header header";
+        }
+        main{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "main main"
+            "main main";
+        }
+        #card{
+            height: 200px;
+        }
+        header{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "header header"
+            "header header";
+        }
+        footer{
+            height: 5%;
+        }
+    }
+        
+        #menudrop {
+            width: 15vw;
+            height: 100vh;
+            background-color: rgba(0,0,0, .5);
+            position: absolute;
+            top:0;
+            left: -15vw;
+            /* display: none; */
+            color: white;   
+            transition: left 5s;
+            z-index: 3;
+        }
+        #menuicon{
+            width: 40px;
+            margin-left: 10px;
+            position: absolute;
+            left: 10px;
+            top: calc(50% - 20px);
+            transition: width 2s, height 2s, background-color 10s;
+            transition-delay: 2s;
+        }
+        #menu{
+            display: none;
+        }
+        #menu:checked ~ div {
+            left: 0;
+              
+          }
+          header>#menudrop>ul>li:hover{
+            text-decoration:underline;
+          }

@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color:  black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    
+    width: 80vw;
+    height: 30vw;
+    background-image: url('./img_tech.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro{
+
+    width: 15vw;
+    height: 80%;
+    background-image: url('./formatura.jpg');
+    background-position: center;
+    background-size: contain;
+    border-radius: 210px;
+    background-repeat: no-repeat;
+}
+
+.textcab {
+
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+  
+p {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+p > #p1 {
+    font-size: 32px;
+    font-weight: bold;
+}

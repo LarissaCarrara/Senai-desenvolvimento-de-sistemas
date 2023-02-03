@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(141, 25, 25);
+    display: flex;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.tudo{
+    width: 18vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 10px;
+}
+.card{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18vw;
+    height: 25vh;
+    
+  
+}
+p{
+    margin-left: 10px;
+    width: 100px;
+  
+}
+
+.divbotao{
+    width: 18vw;
+    height: 5vh;
+    background-color:rgba(128, 128, 128, 0.062);
+    display: flex;
+    align-items: center;
+}
+.botao{
+    width: 60px;
+    height: 30px;
+}
+#logo{
+    width: 150px;
+    height: 30px;
+    padding-left: 5px;
+}

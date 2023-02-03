@@ -1,0 +1,36 @@
+package programa;
+
+public class Paciente {
+
+	String nome;
+	float peso, altura;
+	
+	
+	
+ float imc() {
+		
+		return peso / (altura*altura);
+	}
+	
+	String diagnostico(){
+		
+		if(imc() < 16) {
+			return "Subpeso Severo";				
+		}else if(imc()>=16 && imc () < 20) {
+			return "Subpeso";	
+		}else if(imc()>=20 && imc () < 25) {
+			return "Normal";	
+		}else if(imc()>=25 && imc () < 30) {
+			return "Subrepeso";	
+		}else if(imc()>=30 && imc () < 40) {
+			return "Obeso";	
+		}else {
+			return "Obeso Mórbido";
+		}
+		
+		
+		
+		
+		
+	}
+}

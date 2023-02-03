@@ -1,0 +1,18 @@
+package notas01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Boletim bo[] = new Boletim[10];
+
+		bo[0].aluno = "Ricardo";
+		bo[0].ciencias = 7;
+		bo[0].matematica = 7.5f;
+		bo[0].portugues = 8;
+		bo[0].media();
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package padrao;
+
+public class Venda {
+
+	float preco;
+	int qtd;
+	
+	float Subtotal() {
+		
+		return preco * qtd;
+	}
+}

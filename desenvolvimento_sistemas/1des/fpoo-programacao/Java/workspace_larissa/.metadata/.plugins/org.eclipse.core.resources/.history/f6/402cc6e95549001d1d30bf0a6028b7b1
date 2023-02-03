@@ -1,0 +1,32 @@
+package programa;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		Paciente pacientes[] = new Paciente[10];
+		
+				
+		for(int i=0; i<10; i++) {
+			pacientes[i] = new Paciente();
+			
+			System.out.printf("\nDigite o seu nome: ");
+			pacientes[i].nome = scan.next();
+			
+			System.out.printf("\nDigite sua altura: ");
+			pacientes[i].altura = scan.nextFloat();
+			
+			System.out.printf("\nDigite seu peso: ");
+			pacientes[i].peso = scan.nextFloat();
+		}
+		
+		
+		
+		
+	}
+
+}

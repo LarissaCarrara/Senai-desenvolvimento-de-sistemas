@@ -1,0 +1,23 @@
+package vendas02;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Venda vendas[] = new Venda[10];
+		
+		vendas[0] = new Venda();
+		vendas[0].produto ="Camiseta";
+		vendas[0].preco =19.8f;
+		vendas[0].quantidade = 1;
+		
+		vendas[1] = new Venda();
+		vendas[1].produto ="Canga";
+		vendas[1].preco =19.9f;
+		vendas[1].quantidade = 1;
+		
+		for(int i=0; i<2;i++) {
+			System.out.printf("%s\t%.2f\t%d%.2f\n", vendas[i].produto, vendas[i].preco, vendas[i].quantidade, vendas[i].subtotal());
+		}
+	}
+
+}

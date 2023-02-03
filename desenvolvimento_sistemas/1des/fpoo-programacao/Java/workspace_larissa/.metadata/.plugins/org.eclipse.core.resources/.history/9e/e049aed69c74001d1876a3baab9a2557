@@ -1,0 +1,67 @@
+package ex1;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class Formulario extends JFrame{
+
+	private static final long serialVersionUID = 1L;
+	JPanel painel;
+	JLabel rotuloNome, rotuloIdade, rotuloResultado;
+	JTextField campoNome, campoIdade;
+	JButton botao;
+	JTextArea areaResultado;
+	
+	Formulario(){
+		
+		setTitle("Entrada, Processamento e Saída");
+		setBounds(50,50,600,400);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		painel = new JPanel();
+		setContentPane(painel); 
+		setLayout(null);
+	
+	rotuloNome = new JLabel ("Nome: ");
+	rotuloNome.setBounds(20,20,200,30);
+	painel.add(rotuloNome);
+	
+	rotuloIdade = new JLabel ("Idade: ");
+	rotuloIdade.setBounds(20,60,200,30);
+	painel.add(rotuloIdade);
+	
+	rotuloResultado = new JLabel ("Resultado: ");
+	rotuloResultado.setBounds(20,100,200,30);
+	painel.add(rotuloResultado);
+	
+	campoNome = new JTextField();
+	campoNome.setBounds(100,20,250,30);
+	painel.add(campoNome);
+	
+	campoIdade = new JTextField();
+	campoIdade.setBounds(100,60,250,30);
+	painel.add(campoIdade);
+	
+	botao = new JButton("Processar");
+	botao.setBounds(400,100,100,30);
+	painel.add(botao);
+	
+	areaResultado = new JTextArea();
+	areaResultado.setBounds(100,100,250,30);
+	painel.add(areaResultado);
+	
+	
+	}
+
+	
+	
+	public static void main(String[] args) {
+		System.out.println("Esse programa está funcionando");
+		new Formulario().setVisible(true);
+		
+	}
+
+}

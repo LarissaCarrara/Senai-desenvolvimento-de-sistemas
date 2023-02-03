@@ -1,0 +1,12 @@
+package padrao;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Venda v1 = new Venda(); 
+		System.out.println("Venda1");
+		System.out.println("[Produto][Preço][Qtd.][Subtotal");
+		System.out.printf("[%s][%.2f][%d][%2.f]",v1.produto, v1.preco, v1.quantidade, v1.subtotal());
+	}
+
+}

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; /* Faz respeitar a estrutura, altura e largura */
+}
+
+header {
+    width: 100vw;
+    background-color: aqua; 
+    height: 15vh;
+}
+
+aside {
+
+    background-color: darkblue;
+    float: left;
+    width: 20vw;
+    height: 70vh;
+}
+
+#dentro {
+    background-color: rgb(100, 101, 165);
+    width:60vw ;
+    float: left;
+    height: 70vh;
+    position: relative;
+}
+
+main {
+
+    background-color: darkblue;
+    width: 20vw;
+    height: 70vh;
+    margin-left: 80vw;
+}
+
+footer {
+
+    background-color: rgb(8, 95, 84);
+    height: 15vh;
+}
+
+ #quadrado1 {
+
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 15vw;
+    width: 5vw;
+    height: 10vh;
+    background-color: bisque;
+
+
+}
+
+#quadrado2 {
+
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: 15vw;
+    width: 5vw;
+    height: 10vh;
+    background-color: bisque;
+
+
+}

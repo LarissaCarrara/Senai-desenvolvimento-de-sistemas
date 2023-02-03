@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 12vh;
+    width: 100vw;
+    background-color: #04558A;
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+#head1{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    color: white;
+}
+#head2{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    color: white;
+    position: absolute;
+    right: 0;
+}
+#headimg{
+    height: 40px;
+}
+section{
+    height: 88vh;
+    width: 100vw;
+    background-color: #0182B0;
+}
+#botao{
+    background-color:#0182B0;
+    border: 2px solid #F8C304;
+    color:#F8C304;
+    border-radius: 5px;
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+
+   
+   
+    
+    
+    top: calc(50% - 20px);
+    transition: width 2s, height 2s, background-color 10s;
+    transition-delay: 2s;
+}
+#comp{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+#cancelar{
+    width: 30px ;
+}
+#card{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+a{
+    color: white;
+}
+
+
+#menu{
+    display: none;
+}
+#menu:checked ~ div {
+    top: 0;
+      
+  }
+#modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0181b04b;
+    position: absolute;
+    top:-100vw;
+}
+#x{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.modalcontent{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    
+    
+}

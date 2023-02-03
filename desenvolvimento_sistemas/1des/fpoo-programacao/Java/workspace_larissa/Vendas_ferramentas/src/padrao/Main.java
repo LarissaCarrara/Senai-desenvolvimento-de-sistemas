@@ -1,0 +1,61 @@
+package padrao;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		float cont = 0,  media = 0, min = 10000, max= 0.1f, max2=0.1f;
+		int n = 2, cont2 = 0, cont3 = 0, cont4 = 0;
+		Venda venda[] = new Venda[10]; 
+		System.out.println("Digite nome, qtd e preço");
+		for( int i = 0; i<2; i++) {
+			venda[i] = new Venda();
+			
+			//produto
+			venda[i].nome = scan.next();
+			
+			//quantidade
+			venda[i].qtd = scan.nextInt();
+			
+			//preço
+			venda[i].preco = scan.nextFloat();
+			
+			
+			cont += venda[i].Subtotal();
+			media = cont/n;
+			
+			if(venda[i].preco < min) {
+				min = venda[i].preco;
+				cont2 = i;
+			}
+			if(venda[i].preco > max) {
+				max = venda[i].preco;
+				cont3 = i;
+			}
+			if(venda[i].qtd > max2) {
+				max2 = venda[i].qtd;
+				cont4 = i;
+			}
+		}
+		
+		
+		System.out.println("\n\tProduto\tQtd\tPreço\tSubtotal");
+		
+		for( int i=0; i<2; i++) {
+		
+			System.out.printf("\n\t%s\t%d\t%.2f\t%.2f", venda[i].nome, venda[i].qtd, venda[i].preco, venda[i].Subtotal());
+		}
+		
+		
+			System.out.printf("\n\n\tTotal da compra: %.2f ", cont);
+			System.out.printf("\n\tMédia total dos precos: %.2f", media);
+			System.out.printf("\n\n\tProduto mais barato: %s", venda[cont2].nome);
+			System.out.printf("\n\tProduto mais caro: %s", venda[cont3].nome);
+			System.out.printf("\n\tProduto mais vendido: %s", venda[cont4].nome);
+			
+	}
+
+}

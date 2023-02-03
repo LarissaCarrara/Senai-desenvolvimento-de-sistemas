@@ -1,0 +1,51 @@
+/* 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+} */
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  animation: example 4s infinite;
+}
+
+@keyframes example {
+  0%   {rotate: 0deg; background-color:red; left:0px; top:0px;}
+  25%  {rotate: 90deg;background-color:yellow; left:200px; top:0px;}
+  50%  {rotate: 180deg;background-color:blue; left:200px; top:200px;}
+  75%  {rotate: 270deg;background-color:rgb(35, 7, 136); left:0px; top:200px;}
+  100% {rotate: 360deg;background-color:rgb(22, 204, 204); left:0px; top:0px;}
+}
+
+#div2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example2 {
+    0%   {background-color:red; left:300px; top:0px;}
+    25%  {rotate: 0deg; background-color:rgb(4, 0, 255); left:500px; top:0px;}
+    50%  {rotate: 360deg; background-color:rgb(0, 255, 13); left:200px; top:200px;}
+    75%  {rotate: 360deg;;background-color:rgb(128, 0, 111); left:700px; top:200px;}
+    100% {background-color:rgb(255, 145, 0); left:300px; top:0px;}
+  }
+
+

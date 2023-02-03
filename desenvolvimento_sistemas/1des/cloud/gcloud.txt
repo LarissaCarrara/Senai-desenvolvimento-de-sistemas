@@ -1,0 +1,133 @@
+É possível listar o nome da conta ativa com este comando:
+gcloud auth list
+
+É possível listar o ID de projeto com este comando:
+gcloud config list project
+
+Defina a região como us-central1 .
+gcloud config set compute/region us-central1
+
+Para ver a configuração da região do projeto, execute o seguinte comando:
+gcloud config get-value compute/region
+
+Defina a zona como us-central1-c .
+gcloud config set compute/zone us-central1-c
+
+Para ver a configuração da zona do projeto, execute o seguinte comando:
+gcloud config get-value compute/zone
+
+No Cloud Shell, execute o seguinte comando gcloud para ver o ID do seu projeto:
+gcloud config get-value project
+
+No Cloud Shell, execute o seguinte comando gcloud para ver os detalhes do projeto:
+gcloud compute project-info describe --project $(gcloud config get-value project)
+
+
+COMO DEFINIR VARIÁVEIS DE AMBIENTE
+Essas variáveis definem o ambiente e economizam tempo na criação de scripts com APIs ou executáveis.
+
+Crie uma variável de ambiente para armazenar seu ID do projeto:
+export PROJECT_ID=$(gcloud config get-value project)
+
+Crie uma variável de ambiente para armazenar sua Zona:
+export ZONE=$(gcloud config get-value compute/zone)
+
+Para verificar se as variáveis foram definidas corretamente, execute os comandos abaixo:
+echo -e "PROJECT ID: $PROJECT_ID\nZONE: $ZONE"
+
+
+COMO CRIAR UMA MAQUINA VIRTUAL COM A FERRAMENTA GCLOUD
+Use a ferramenta gcloud para criar uma nova instância de máquina virtual (VM).
+
+Execute o comando a seguir para criar sua VM:
+gcloud compute instances create gcelab2 --machine-type e2-medium --zone $ZONE
+
+EXPLORE OS COMANDOS GCLOUD
+
+gcloud -h
+Acesse uma ajuda com um nível de detalhes maior adicionando a sinalização --help a um comando ou executando gcloud help.
+
+Execute este comando:
+gcloud config --help
+Para sair digite Q e pressione Enter.
+
+gcloud help config
+Os resultados dos comandos gcloud config --help e gcloud help config são equivalentes. Ambos retornam uma ajuda longa e detalhada.
+
+VEJA A LISTA DE CONFIGURAÇÕES NO SEU AMBIENTE
+gcloud config list
+Para ver todas as propriedades e as respectivas configurações:
+
+gcloud config list --all
+
+Liste os componentes:
+gcloud components list
+
+EXECUTE A FILTRAGEM DA SAÍDA DA LINHA DE COMANDO
+A CLI gcloud é uma ferramenta importante para trabalhar na linha de comando. Às vezes pode ser necessário especificar informações a serem exibidas.
+
+Liste a instância de computação disponível no projeto
+gcloud compute instances list
+
+
+Liste a máquina virtual gcelab2
+gcloud compute instances list --filter="name=('gcelab2')"
+
+Liste as regras de firewall do projeto
+gcloud compute firewall-rules list
+
+Liste as regras de firewall da rede padrão
+gcloud compute firewall-rules list --filter="network='default'"
+
+Liste as regras de firewall da rede padrão em que a regra de permissão corresponda a uma regra ICMP
+gcloud compute firewall-rules list --filter="NETWORK:'default' AND ALLOW:'icmp'"
+
+CONECTE-SE A SUA INSTANCIA DE VM
+Para se conectar à VM com SSH, execute o comando abaixo:
+gcloud compute ssh gcelab2 --zone $ZONE
+Para continuar, digite Y.
+ara deixar a senha longa vazia, pressione ENTER.
+
+Instale o servidor da Web nginx na máquina virtual
+sudo apt install -y nginx
+
+Como nenhuma ação é necessária aqui, desconecte-se do SSH e saia do shell remoto executando o comando abaixo:
+exit
+Você voltará ao prompt de comando do projeto.
+
+ATUALIZE O FIREWALL
+Liste as regras de firewall para o projeto
+gcloud compute firewall-rules list
+
+Adicione uma tag à máquina virtual
+gcloud compute instances add-tags gcelab2 --tags http-server,https-server
+
+Atualize a regra de firewall para permitir
+gcloud compute firewall-rules create default-allow-http --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:80 --source-ranges=0.0.0.0/0 --target-tags=http-server
+
+Liste as regras de Firewall para o projeto
+gcloud compute firewall-rules list --filter=ALLOW:'80'
+
+Verifique se a máquina virtual aceita a comunicação HTTP
+curl http://$(gcloud compute instances list --filter=name:gcelab2 --format='value(EXTERNAL_IP)')
+
+EXECUTE A VISUALIZAÇÃO DOS REGISTROS DO SISTEMA
+Exiba os registros disponíveis no sistema:
+gcloud logging logs list
+
+Exiba os registros relacionados aos recursos de computação
+gcloud logging logs list --filter="compute"
+
+Leia os registros relacionados ao tipo de recurso de gce_instance
+gcloud logging read "resource.type=gce_instance" --limit 5
+
+Leia os registros de uma máquina virtual específica
+gcloud logging read "resource.type=gce_instance AND labels.instance_name='gcelab2'" --limit 5
+
+
+
+export ZONE=$(gcloud config get-value compute/zone)
+Copiado.
+Para verificar se as variáveis foram definidas corretamente, execute os comandos abaixo:
+
+echo -e "PROJECT ID: $PROJECT_ID\nZONE: $ZONE"

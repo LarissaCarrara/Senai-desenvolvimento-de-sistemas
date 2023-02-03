@@ -1,0 +1,28 @@
+* {
+    margin: 0; 
+}
+.container {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    background-color: darkcyan;
+ }
+#um {
+    justify-content: space-around;
+}
+#dois {
+    justify-content: space-between;
+}
+#tres {
+    justify-content: space-evenly;
+}
+#quatro {
+    justify-content: center; 
+}
+#bolinha {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white; 
+}

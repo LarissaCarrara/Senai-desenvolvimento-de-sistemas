@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Larissa Carrara 1DS- Não Apagar\java\workspace_aula02\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2820330174.index
+3553744582.index

@@ -1,0 +1,53 @@
+package notas01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Boletim bo[] = new Boletim[10];
+
+		bo[0] = new Boletim();
+		bo[0].aluno = "Ricardo";
+		bo[0].ciencias = 7;
+		bo[0].matematica = 7.5f;
+		bo[0].portugues = 8;
+		bo[0].media();
+		
+		bo[1] = new Boletim();
+		bo[1].aluno = "Carlos";
+		bo[1].ciencias = 6;
+		bo[1].matematica = 8.5f;
+		bo[1].portugues = 7;
+		bo[1].media();
+		
+		bo[2] = new Boletim();
+		bo[2].aluno = "Andreia";
+		bo[2].ciencias = 8;
+		bo[2].matematica = 8.5f;
+		bo[2].portugues = 9;
+		bo[2].media();
+		
+		bo[3] = new Boletim();
+		bo[3].aluno = "Roberto";
+		bo[3].ciencias = 7;
+		bo[3].matematica = 6.5f;
+		bo[3].portugues = 8;
+		bo[3].media();
+		
+		bo[4] = new Boletim();
+		bo[4].aluno = "Larissa";
+		bo[4].ciencias = 10;
+		bo[4].matematica = 10;
+		bo[4].portugues = 10;
+		bo[4].media();
+		
+		System.out.printf("Aluno(a): \t Port. \t Math. \t Cienc.\t Medias:");
+		
+		for (int i=0; i<5; i++) {
+
+			System.out.printf(bo[i].toString());
+		}
+		
+	}
+
+}
