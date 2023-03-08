@@ -1,4 +1,5 @@
 -- Banco de dados de estoque
+DROP DATABASE IF EXISTS estoque;
 CREATE DATABASE estoque; --criando o banco de dados
 USE estoque; --acessa o banco de dados
 
@@ -46,3 +47,6 @@ SELECT * FROM acoes;
 
 -- ALTERAÇÕES
 UPDATE funcionarios SET nome = "Ivanilvo" WHERE matricula = 1;
+
+--Inserindo dados
+INSERT INTO funcionarios VALUES ("","Levi"), ("","Denner"), ("","Reenye"),("","Wellington"), ("","Ivo") , ("","Paraguassu"), ("","Tati");

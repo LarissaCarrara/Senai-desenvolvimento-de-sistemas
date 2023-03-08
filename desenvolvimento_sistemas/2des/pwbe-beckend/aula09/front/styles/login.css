@@ -1,0 +1,29 @@
+@import url('./global.css');
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background:  rgba(0, 0, 0, 0.253);
+    border-radius: 7px;
+    padding: 1.5rem;
+}
+
+.form input, .form button{
+    padding: .5rem;
+    border-radius: 7px;
+    border: none;
+}
+
+.form button{
+    cursor: pointer;
+}

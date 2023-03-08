@@ -47,3 +47,10 @@ SELECT * FROM produtos WHERE id =1;
 SELECT * FROM funcionarios WHERE matricula =1;
 SELECT * FROM acoes WHERE data ="2023-02-02";
 SELECT * FROM acoes WHERE data = CURDATE();
+
+VIEWS = visões -> consultas salvas (relatórios)
+//ver o relatório com todos os dados
+SELECT* FROM nometabela
+//ver o relatório com somente os 5 primeiros
+SELECT * FROM nometabela LIMIT 5;
+

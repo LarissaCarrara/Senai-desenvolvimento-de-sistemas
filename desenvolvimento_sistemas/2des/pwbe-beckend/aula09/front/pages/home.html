@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <p id="nome"></p>
+        <p onclick="logoff()">Sair</p>
+    </header>
+
+    <main>
+        <div class="card model">
+            <div id="info">
+                <p id="codigo">KSA12134</p>
+                <p id="endereco">Rua teste</p>
+            </div>
+
+            <div id="valores">
+                <p id="venda">3000000</p>
+                <p id="aluguel">3000</p>
+            </div>
+
+            <p id="status">Disponível</p>
+
+            <div class="opcoes">
+                <button onclick="alterarStatus(3)">Alugar</button>
+                <button onclick="alterarStatus(2)">Vender</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../scripts/home.js"></script>
+</html>

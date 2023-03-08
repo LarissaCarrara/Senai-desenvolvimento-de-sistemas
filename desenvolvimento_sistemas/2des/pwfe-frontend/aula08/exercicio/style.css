@@ -1,0 +1,14 @@
+
+.divcard{
+    display: flex;
+    align-items: center;
+}
+.botao{
+    width: 50px;
+    height: 20px;
+    margin-left: 15px;
+}
+/* .divcomissao{
+    display: flex;
+    align-items: center;
+} */

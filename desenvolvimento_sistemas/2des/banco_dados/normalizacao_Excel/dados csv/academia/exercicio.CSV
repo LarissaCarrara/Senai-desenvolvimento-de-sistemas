@@ -1,0 +1,18 @@
+id_aluno;id_Exercicio;descricao;grupo_muscular;aparelho
+1;1;Supino Reto;Peito;prancha peito reto
+1;2;Corrida;Aquecimento;Esteira
+2;3;Supino declinado;Peito;prancha peito invertido
+2;4;Pedalada;Aquecimento;Bicicleta Ergométrica
+3;5;Supino Inclinado;Peito;prancha peito inclinado
+3;6;Panturrilha;Perna;Leg Press
+4;7;crucifixo;Peito;crucifixo
+4;8;Caminhada;Aquecimento;Esteira
+1;9;Puxada Baixa;Costas;puxador movel costas
+1;10;Elevação Frontal;Ombro;alter 20k
+1;11;Maq. Posterior;Ombro;prancha ombro
+2;12;Remada Alta;Costas;puxador fixo costas
+2;13;Empurrar Cochas;Perna;Leg Press
+3;14;Cerrote;Costas;puxador sentado costas
+3;15;Biceps;Braço;alter 10k
+4;16;Elevação Lateral;Ombro;alter 10k
+4;17;Triceps;Braço;alter 10k

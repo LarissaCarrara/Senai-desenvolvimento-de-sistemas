@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="2">
+        <thead>Setores</thead>
+        <tbody>
+            <tr>
+                <td>Matricula</td> <!-- column -->
+                <td>Nome</td>
+                <td>Setor</td>
+                <td>Total de vendas</td>
+                <td>Comissão ganha</td>
+            </tr> <!-- row -->
+            <tr>
+                <td class="matricula"></td>
+                <td class="nome"></td>
+                <td class="setor"></td>
+                <td class="total"></td>
+                <td class="comissao"></td>
+            </tr>
+            <tr>
+                <td class="matricula"></td>
+                <td class="nome"></td>
+                <td class="setor"></td>
+                <td class="total"></td>
+                <td class="comissao"></td>
+            </tr>
+            <tr>
+                <td class="matricula"></td>
+                <td class="nome"></td>
+                <td class="setor"></td>
+                <td class="total"></td>
+                <td class="comissao"></td>
+            </tr>
+        </tbody>
+    </table>
+        <h2>Cadastrar venda</h2>
+        <p>Digite o nome ou matricula
+            <input type="text" id="search">
+        </p>
+        <div id="result"></div>        
+    <button onclick="procurar()">Pesquisar</button>
+    <form>
+        <div id="venda">
+            <h4>Nova venda</h4>
+            <p>
+                data: 
+                <input type="date" id="data">
+            </p>
+            <p>
+                valor: 
+                <input type="number" min="0" id="valor">
+            </p>
+            </div>
+    </form>
+</body>
+<script src="./script.js"></script>
+</html>

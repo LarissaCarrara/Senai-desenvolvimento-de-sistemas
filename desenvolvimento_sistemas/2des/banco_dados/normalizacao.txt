@@ -1,0 +1,17 @@
+1° FORMA NORMAL
+a) identificar campos compostos
+Solução: dividi-los em colunas
+
+b)Identificar atributos multivalorados
+Solução: colocá-los em outra tabela relacionada
+
+2° FORMA NORMAL
+a)Estar na 1° forma normal
+b)Identificar campos chave
+c)Identificar campos dependentes de outras chaves
+Solução: colocar estes campos em outra tabela
+
+3° FORMA NORMAL
+a)Estar na 2° forma normal
+b)Identificar campos derivados
+Solução: eliminar estes campos - obs: estes serão calculados em consultas/visõe sou apps.

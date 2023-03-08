@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inventário</h1>
+    <form id="cadastro">
+        
+        <input type="text" id="id" class="input"  placeholder="id" name="id" >
+        <input type="text" id="nome" class="input" placeholder="nome" name="nome"> 
+        <input type="text" id="descricao" class="input" placeholder="descricao" name="descricao"> 
+        <input type="number" id="valor" class="input" placeholder="valor" name="valor"> 
+        <input type="submit" value="Cadastrar" id="botao" onclick="Cadastrar()">
+    </form>
+
+    <section>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Id</td>
+                    <td>Nome</td>
+                    <td>Descrição</td>
+                    <td>Valor</td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="button" value="calcular" onclick="calcular()">
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>
