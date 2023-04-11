@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#tudo{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: brown;
+}
+
+#logo{
+    height: 6vh;
+}
+.divlogo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.divheader{
+    width: 50%;
+    height: 100%;
+}
+#textologo{
+    font-size: 20px;
+}
+section{
+    width: 50vw;
+    height: 30vh;
+    border-left: 1px solid #000000;
+}
+
+h2{
+    padding: 50px 0 0 10px;
+}
+
+.input{
+    margin: 10px 0 0 10px;
+}
+.novopedido{
+    width: 60%;
+}
+aside{
+    width: 50vw;
+    height: 30vh;
+}
+.cozinha{
+    width: 50%;
+    height: 100%;
+    border-left: thick solid #000;
+} 
+footer{
+    width: 100vw;
+    height: 50vh;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 15%;
+    border: 1px solid #000;
+    margin: 5px 0 0 10px;
+    align-items: center;
+}
+.tit{
+    margin-left: 20px;
+}
+
+.botaocard{
+    margin-left: 25px;
+    width: max-content;
+    height: 20px;
+    background-color: transparent;
+}
+.botaoremove{
+    height: max-content;
+    background-color: transparent;
+    border: none;
+}
+.x{
+    margin-left: 10px;
+    width: 10px;
+    height: 15px;
+}
