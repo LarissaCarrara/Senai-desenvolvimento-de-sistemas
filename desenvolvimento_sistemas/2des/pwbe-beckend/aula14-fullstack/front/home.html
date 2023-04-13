@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="home.css">
 </head>
-<body>
-    
+<body onload="carregaTela()">
+    <header>
+        <div class="div_titulo">
+            <h1 id="h1">Pesquisar restaurante</h1>
+            <img src="./assets/icon_restaurante.png" id="icon">
+        </div>
+
+        <div class="div_Select">
+            <p id="p_filtrar">Filtrar: </p>
+            <select name="" id="select">
+               
+            </select>
+
+            <img src="./assets/lupa.png" id="lupa" onclick="filtrar()">
+        </div>
+        <!-- <div class="div_listar">
+            <input type="button" value="Listar todos" onclick="listar()" id="botao_listar">
+        </div> -->
+    </header>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th class="td"><u>Nome</u></th>
+                    <th class="td"><u>Categoria</u></th>
+                    <th class="td"><u>Endereço</u></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+    <script src="./home.js"></script>
 </body>
 </html>

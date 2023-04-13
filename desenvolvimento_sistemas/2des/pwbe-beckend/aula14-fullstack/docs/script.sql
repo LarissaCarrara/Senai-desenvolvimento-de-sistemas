@@ -1,7 +1,7 @@
 -- SQL do banco de dados de Tarefas a fazer
-DROP DATABASE IF EXISTS restaurante;
-CREATE DATABASE restaurante;
-USE restaurante;
+DROP DATABASE IF EXISTS Restaurante;
+CREATE DATABASE Restaurante;
+USE Restaurante;
 -- DDL Criação da estrutura da tabela
 CREATE TABLE cliente(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -43,5 +43,9 @@ CREATE TABLE avaliacao(
 );
 
 INSERT INTO cliente VALUES ("", "larissa", "19997758097","larissa.carrara@hotmail.com", "12345");
+
+INSERT INTO categoria VALUES ("1", "pizzaria");
+
+INSERT INTO restaurante VALUES ("", "pizzaria do dede",1, "rua egas bueno");
 
 
