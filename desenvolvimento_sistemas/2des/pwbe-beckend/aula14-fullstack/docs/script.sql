@@ -45,7 +45,10 @@ CREATE TABLE avaliacao(
 INSERT INTO cliente VALUES ("", "larissa", "19997758097","larissa.carrara@hotmail.com", "12345");
 
 INSERT INTO categoria VALUES ("1", "pizzaria");
+INSERT INTO categoria VALUES ("2", "lanchonete");
 
 INSERT INTO restaurante VALUES ("", "pizzaria do dede",1, "rua egas bueno");
 
+INSERT INTO restaurante VALUES ("", "pizzaria do camacho",1, "rua egas");
 
+INSERT INTO restaurante VALUES ("", "lanchonete",2, "rua egas");

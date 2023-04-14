@@ -29,6 +29,10 @@ function listar(idCategoria){
                 pnome.innerHTML = element.nome;
                 pnome.className="t";
 
+                pnome.addEventListener("click", ()=>{
+                     cardapio();
+                 })
+
                 const pcategoriaid = document.createElement("td");
                 pcategoriaid.innerHTML = element.categoria;
                 pcategoriaid.classList="t";
@@ -37,10 +41,21 @@ function listar(idCategoria){
                 pendereco.innerHTML = element.endereco;
                 pendereco.classList="t";
                
+                const botao_cardapio = document.createElement("button");
+
+
+
+                // botao_cardapio.innerHTML = "Cardápio";
+                // botao_cardapio.className="botao_cardapio";
+
+                //  botao_cardapio.addEventListener("click", ()=>{
+                //     cardapio();
+                // })
 
                 tr.appendChild(pnome);
                 tr.appendChild(pcategoriaid);
-                tr.appendChild(pendereco);
+                tr.appendChild(pendereco); 
+                
                 tbody.appendChild(tr);
 
         })
@@ -66,4 +81,8 @@ function carregarCategorias() {
 function carregaTela() {
     carregarCategorias();
     listar();
+}
+
+function cardapio(){
+    alert("oi");
 }
