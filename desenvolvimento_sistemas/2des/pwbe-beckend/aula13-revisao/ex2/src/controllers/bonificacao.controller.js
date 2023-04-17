@@ -4,9 +4,9 @@ const Funcionario = require('../model/bonificacao.model');
 
 
 const cadastrar = (req,res) =>{
-    const {matricula, nome_completo, admissao, salario, dataPagto, desempenho} = req.body;
+    const {nome_completo, admissao, salario, dataPagto, desempenho} = req.body;
 
-    let query = `INSERT INTO paciente VALUES("", ${matricula} '${nome_completo}', '${admissao}', ${salario}, '${dataPagto}', ${desempenho} )`;
+    let query = `INSERT INTO funcionario VALUES( '', '${nome_completo}', '${admissao}', ${salario}, CURDATE(), ${desempenho}, '')`;
 
     con.query(query, (err, response )=>{
         if(err == undefined){
@@ -20,8 +20,8 @@ const cadastrar = (req,res) =>{
 
 const listar = (req,res) =>{
 
-    let query = `SELECT * FROM funcionario`;
-
+    let query = "SELECT * FROM funcionario";
+    console.log(query);
     con.query(query, (err, response )=>{
         if(err == undefined){
 
@@ -32,6 +32,7 @@ const listar = (req,res) =>{
                 
                 let data = {
                     ...response[i],
+                    dataPagto: new Date(funcionario.dataPagto).toDateString(),
                     bonificacao:funcionario.bonificacao()
                 }
                 dados.push(data);
@@ -48,13 +49,14 @@ const listar = (req,res) =>{
 
 const alterar = (req, res)=>{
     
-    const {nome_completo, admissao, salario, dataPagto, desempenho } = req.body;
+    const {nome_completo, admissao, salario, dataPagto, desempenho, bonificacao } = req.body;
 
-    let query = `UPDATE paciente SET nome_completo = '${nome_completo}',
+    let query = `UPDATE funcionario SET nome_completo = '${nome_completo}',
     admissao = '${admissao}',
     salario = ${salario},
     dataPagto = '${dataPagto}',
     desempenho = ${desempenho},
+    bonificacao = ${bonificacao}
     WHERE matricula = ${req.params.matricula}`; //recebe matricula`
 
 
@@ -70,7 +72,7 @@ const alterar = (req, res)=>{
 
 const remover = (req, res)=>{
 
-    let query = `DELETE FROM funcionario WHERE id= ${req.params.matricula}`;
+    let query = `DELETE FROM funcionario WHERE matricula= ${req.params.matricula}`;
 
     con.query(query, (err, response )=>{
         if(err == undefined){

@@ -2,7 +2,7 @@
 class funcionario{
     
     constructor(i){
-        this.id = i.id,
+        this.matricula = i.matricula,
         this.nome_completo = i.nome_completo,
         this.admissao = i.admissao,
         this.salario= i.salario,
