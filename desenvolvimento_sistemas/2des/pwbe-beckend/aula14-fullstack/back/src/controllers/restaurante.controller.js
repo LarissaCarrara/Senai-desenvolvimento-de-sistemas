@@ -54,11 +54,26 @@ const categoria = (req,res) =>{
         }
     })
 }
+
+const listarCardapio = (req, res) =>{
+    let query = "SELECT cardapio.restauranteid, cardapio.descricao, cardapio.valor, restaurante.nome FROM cardapio INNER JOIN restaurante ON restaurante.id = cardapio.restauranteid";
+
+
+    con.query(query, (err,response) => {
+        if(err == undefined){
+            res.status(200).json(response).end();
+        }else{
+            res.status(400).json(err).end();
+        }
+    })
+}
+
 module.exports = {
     login,
     listar,
     filtrar,
-    categoria
+    categoria,
+    listarCardapio
 }
 
 //200-deu certo 201 - criou  202- aceito 400-erro 404- não encontrado 500-erro mto grave- tabela http

@@ -52,3 +52,5 @@ INSERT INTO restaurante VALUES ("", "pizzaria do dede",1, "rua egas bueno");
 INSERT INTO restaurante VALUES ("", "pizzaria do camacho",1, "rua egas");
 
 INSERT INTO restaurante VALUES ("", "lanchonete",2, "rua egas");
+
+INSERT INTO cardapio VALUES ("", 1 ," Pizza de Calabresa", 45.00);

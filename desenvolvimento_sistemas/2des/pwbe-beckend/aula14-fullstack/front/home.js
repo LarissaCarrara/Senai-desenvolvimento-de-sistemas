@@ -29,14 +29,15 @@ function listar(idCategoria){
                 pnome.innerHTML = element.nome;
                 pnome.className="t";
 
-                pnome.addEventListener("click", ()=>{
-                     cardapio();
-                 })
-
+                let id = element.id;
+                
                 const pcategoriaid = document.createElement("td");
                 pcategoriaid.innerHTML = element.categoria;
                 pcategoriaid.classList="t";
-
+                
+                pnome.addEventListener("click", ()=>{
+                     cardapio(id);
+                 })
                 const pendereco = document.createElement("td");
                 pendereco.innerHTML = element.endereco;
                 pendereco.classList="t";
@@ -83,6 +84,7 @@ function carregaTela() {
     listar();
 }
 
-function cardapio(){
-    alert("oi");
+function cardapio(id){
+console.log(id);
+  window.location.href = `./cardapio.html?id=${id}`;
 }
