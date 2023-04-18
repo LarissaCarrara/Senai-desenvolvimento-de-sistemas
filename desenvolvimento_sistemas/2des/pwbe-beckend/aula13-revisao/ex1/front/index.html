@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="div_icon">
+            <h1>Calcular IMC</h1>
+            <img src="./assets/prancheta.png" id="icone">
+        </div>
+        <input type="button" value="Listar todos" id="botao_listar" onclick="listar()" >
+    </header>
+    <section>
+        <div class="div_card">
+            <h2>Cadastrar</h2>
+            <p class="p">Nome: </p>
+            <input type="text" placeholder="Insira seu nome: " id="nome" class="input">
+            <p class="p">Data de nascimento:</p>
+            <input type="date" placeholder="Insira sua idade: " id="data" class="input">
+            <p class="p">Peso: </p>
+            <input type="number" min="0" max="250" id="peso" class="input">
+            <p class="p">Altura: </p>
+            <input type="number" min="0" max="3" id="altura" class="input">
+            <input type="button" value="Calcular" id="botao" onclick="cadastrar()">
+        </div>
+        <div class="div_lista">
+            <h2 id="tit_lista">Lista</h2>
+
+            <table>
+                <thead id="thead">
+                    <tr>
+                        <th class="td">Nome</th>
+                        <th class="td">Data nascimento</th>
+                        <th class="td">Idade</th>
+                        <th class="td">Peso</th>
+                        <th class="td">Altura</th>
+                        <th class="td">IMC</th>
+                        <th class="td">Diagnostico</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+<script src="server.js"></script>
+</html>

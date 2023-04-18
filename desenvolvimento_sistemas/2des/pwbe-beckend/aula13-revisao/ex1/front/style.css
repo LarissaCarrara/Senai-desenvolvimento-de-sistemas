@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(167, 161, 161);
+  
+}
+header{
+    height: 12vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+    width: 100vw;
+    height: 88vh;
+    background-color: darkgrey;
+    display: flex;
+    justify-content:space-between ;
+   
+}
+#botao_listar{
+    width: 100px;
+    height: 40px;
+    margin-right: 10px ;
+}
+.div_card{
+    width: 30%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.div_lista{
+    width: 70%;
+    background-color: bisque;
+}
+.div_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    width: 300px;
+}
+#icone{
+    width: 50px;
+    margin-left: 10px;
+}
+.input{
+    width: 250px;
+    height: 30px;
+}
+.p{
+    margin-top: 5px;
+    font-size:22px;
+}
+#botao{
+    width: 250px;
+    height: 25px;
+    margin-top: 10px;
+}
+.td{
+    width: 100px;
+}
+.t{
+    width: 150px;
+    /* padding-left: 40px; */
+    border: 1px solid;
+   text-align: center;
+}
+.imagem{
+    width: 20px;
+    border: 1px solid;
+}
+.btn_editar{
+    height: 20px;
+    width: 50px;
+    margin-left:10px ;
+}
+#thead{
+    display: none;
+}
+#tit_lista{
+    display: none;
+}
+
+@media (max-width: 1134px) {
+    .input {
+      width: 100px;
+    }
+    #botao{
+        width: 100px;
+    }
+}
+
+@media (max-width: 654px) {
+   .div_card{
+    width: 20%;
+   }
+}
