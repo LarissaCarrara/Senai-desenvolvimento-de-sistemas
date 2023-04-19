@@ -60,9 +60,9 @@ function editar(id, pacientes) {
             return resp.status;
         })
         .then(data => {
-            if (data == 201) {
-                console.log(data);
-                alert("cadastrado");
+            if (data.status == 201) {
+                console.log(data.status);
+            
             }
         })
 }

@@ -67,8 +67,12 @@ section{
     height: 25px;
     margin-top: 10px;
 }
-.td{
-    width: 100px;
+th{
+    width: 120px;
+   
+}
+.tr{
+    width: 200px;
 }
 .t{
     width: 150px;
