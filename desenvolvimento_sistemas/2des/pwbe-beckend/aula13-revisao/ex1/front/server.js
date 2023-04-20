@@ -2,7 +2,7 @@ let nome = document.querySelector("#nome");
 let nascimento = document.querySelector("#data");
 let peso = document.querySelector("#peso");
 let altura = document.querySelector("#altura");
-let tbody = document.querySelector("tbody");
+const tbody = document.querySelector("tbody");
 let thead = document.querySelector("thead");
 let div = document.querySelector("#tit_lista")
 function remover(id) {
@@ -70,7 +70,7 @@ function editar(id, pacientes) {
 function listar() {
 
     div.style.display = "block";
-    thead.style.display = "block";
+    thead.style.display = "table-header-group";
     fetch('http://localhost:3000/pacientes')
         .then(resp => {
             return resp.json();
@@ -113,6 +113,11 @@ function listar() {
                     pdiag.innerHTML = element.diagnostico;
                     pdiag.classList = "t";
 
+                    
+                    const imagemdel = document.createElement("td");
+                    pdiag.classList = "t";
+
+
                     const imagem = document.createElement("img");
                     imagem.src = "./assets/x.png";
                     imagem.className = "imagem";
@@ -122,30 +127,45 @@ function listar() {
                         tr.remove(id);
                     })
 
+                    const btn = document.createElement("td");
+                    pdiag.classList = "t";
+
                     const btn_editar = document.createElement("button");
                     btn_editar.innerHTML = "Editar";
                     btn_editar.className = "btn_editar";
 
-                    btn_editar.addEventListener("click", (e) => {
 
+                    const btnEnviar = document.createElement("td");
+                    pdiag.classList = "t";
+
+                    const btn_enviar = document.createElement("button");
+                    btn_enviar.innerHTML = "enviar";
+                    btn_enviar.className = "btn_editar";
+
+
+                    btn_editar.addEventListener("click", (e) => {
                         e.target.parentNode.querySelectorAll('td')
                             .forEach(td => {
                                 td.contentEditable = true
                                 td.style.background = "#ccc"
                             })
+                            btn_enviar.addEventListener("click", (e) => {
+                                let pacientes = {
+                                    "nome_completo": pnome.value,
+                                    "nascimento": pnascimento.value,
+                                    "peso": ppeso.value,
+                                    "altura": paltura.value
+                                }
+                            
+                                 editar(id, pacientes);
+                            })
 
-
-                        let pacientes = {
-                            "nome_completo": pnome.value,
-                            "nascimento": pnascimento.value,
-                            "peso": ppeso.value,
-                            "altura": paltura.value
-                        }
-
-                        editar(id, pacientes);
                     })
-
-
+                    
+                    
+                    imagemdel.appendChild(imagem);
+                    btn.appendChild(btn_editar);
+                    btnEnviar.appendChild(btn_enviar);
 
                     tr.appendChild(pnome);
                     tr.appendChild(pnascimento);
@@ -154,8 +174,9 @@ function listar() {
                     tr.appendChild(paltura);
                     tr.appendChild(pimc);
                     tr.appendChild(pdiag);
-                    tr.appendChild(imagem);
-                    tr.appendChild(btn_editar);
+                    tr.appendChild(imagemdel);
+                    tr.appendChild(btn);
+                    tr.appendChild(btnEnviar);
     
                     tbody.appendChild(tr);
                 })

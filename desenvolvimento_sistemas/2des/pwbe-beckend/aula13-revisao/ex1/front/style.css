@@ -67,21 +67,14 @@ section{
     height: 25px;
     margin-top: 10px;
 }
-th{
-    width: 120px;
-   
-}
-.tr{
-    width: 200px;
-}
+
 .t{
-    width: 150px;
-    /* padding-left: 40px; */
+    padding: 20px;
     border: 1px solid;
-   text-align: center;
+    text-align: center;
 }
 .imagem{
-    width: 20px;
+    width: 30px;
     border: 1px solid;
 }
 .btn_editar{

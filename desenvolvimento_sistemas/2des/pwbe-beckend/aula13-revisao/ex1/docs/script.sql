@@ -9,3 +9,4 @@ CREATE TABLE paciente(
     peso FLOAT NOT NULL,
     altura FLOAT NOT NULL
 );
+
