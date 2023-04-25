@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionario</title>
+    <link rel="stylesheet" href="funcionario.css">
+</head>
+<body onload="CarregarVendedor()">
+    <header>
+        <img src="../assets/loja_icone.png" id="logo">
+        <p id="saudacao"> Bem vindo a lojinha Carrara!</p>
+        <p onclick="PaginaProduto()" id="produto" class="p">Nova Venda</p>
+        <p onclick="PaginaVenda()"id="vendas" class="p">Vendas</p>
+        <p id="funcionarios" class="p">Funcionarios</p>
+    </header>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th class="td"><u>Id</u></th>
+                    <th class="td"><u>Nome</u></th>
+                    <th class="td"><u>Matricula</u></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+</body>
+<script src="funcionario.js"></script>
+</html>

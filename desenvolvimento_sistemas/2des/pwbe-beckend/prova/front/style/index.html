@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="CarregarProdutos(), CarregarVendedor()">
+    <header>
+        <img src="../assets/loja_icone.png" id="logo">
+        <p id="saudacao"> Bem vindo a lojinha Carrara!</p>
+        <p id="produto" class="p">Nova Venda</p>
+        <p  onclick="PaginaVenda()" id="vendas" class="p">Vendas</p>
+        <p onclick="PaginaFuncionarios()" id="funcionarios" class="p">Funcionarios</p>
+    </header>
+    <section>
+        <form>
+            <label>Data</label>
+            <input type="Date" id="data" class="input">
+            <label>Quantidade</label>
+            <input type="number" min="1" id="quantidade" class="input">
+            <label>Id do produto</label>
+            <select class="input" id="selectProdutos" >
+              
+            </select>
+            <label>Id do Vendedor</label>
+            <select class="input" id="selectVendedor" >
+              
+            </select>
+            <input type="button" value="Entrar" id="botao" onclick="Cadastrar()">
+        </form>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

@@ -2,6 +2,7 @@
 class Vendedor{
     
     constructor(i){
+        this.id= i.id,
         this.matricula = i.matricula,
         this.nome = i.nome,
         this.quantidade = i.quantidade,

@@ -26,6 +26,8 @@ CREATE TABLE vendas(
 
 
 INSERT INTO vendedores VALUES ("", "larissa", 001);
+INSERT INTO vendedores VALUES ("", "camacho", 002);
+INSERT INTO vendedores VALUES ("", "andre", 003);
 
 INSERT INTO produtos VALUES ("", "garrafa", 30);
 

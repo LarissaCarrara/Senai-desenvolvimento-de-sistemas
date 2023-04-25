@@ -19,7 +19,7 @@ const cadastrar = (req,res) =>{
 
 const listar = (req,res) =>{
 
-    let query = `SELECT vendas.data, produtos.nome , vendedores.nome as vendedor FROM vendas INNER JOIN produtos ON vendas.produtoid = produtos.id INNER JOIN vendedores ON vendas.vendedorid = vendedores.id`;
+    let query = `SELECT vendas.id  as vendaid, vendas.data, vendas.quantidade, produtos.id as produtoid, produtos.nome , vendedores.id, vendedores.nome as vendedor FROM vendas INNER JOIN produtos ON vendas.produtoid = produtos.id INNER JOIN vendedores ON vendas.vendedorid = vendedores.id`;
 
     con.query(query, (err, response )=>{
         if(err == undefined){
