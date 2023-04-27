@@ -40,8 +40,8 @@ export default function App() {
         style={styles.formula}
         source={require('./assets/formula.jpg')}
       />
-      <Text style={styles.textos}>Resultado 110V: {bitola110}</Text>
-      <Text style={styles.textos}>Resultado 220V: {bitola220}</Text>
+      <Text style={styles.texto1}>Resultado 110V: {bitola110}</Text>
+      <Text style={styles.texto2}>Resultado 220V: {bitola220}</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -53,15 +53,29 @@ const styles = StyleSheet.create({
     backgroundColor: '#330000',
     alignItems: 'center',
     justifyContent: 'center',
+    position:'relative',
   },
   titulo: {
     fontSize: '22px',
     color: '#fcc',
     fontWeight: 'bold',
   },
+  texto1: {
+    fontSize: '18px',
+    color: '#fee',
+    position:"absolute",
+    bottom: '200px'
+  },
+  texto2: {
+    fontSize: '18px',
+    color: '#fee',
+    position:"absolute",
+    bottom: '170px'
+  },
   textos: {
     fontSize: '18px',
     color: '#fee',
+  
   },
   inputs: {
     borderBottomColor: '#ccc',
