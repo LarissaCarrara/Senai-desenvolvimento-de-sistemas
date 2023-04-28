@@ -1,6 +1,7 @@
 REGEX: Padrão para identificar string 
 ou numeros e formatar de acordo com o necessario
 
+
 Dependencias:
 
 1 - iniciar com "npx expo init"
