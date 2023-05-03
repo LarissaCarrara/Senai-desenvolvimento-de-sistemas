@@ -1,0 +1,18 @@
+Tutorial: Iniciando um projeto mobile com React Native
+
+Certificar-se de ter instalado em seu computador:
+Node JS - versão LTS
+VSCode
+-Criar uma pasta para seu projeto
+-Abrir com o vscode
+
+Instalar o Expo globalmente utilizando o gerenciador de pacotes “NPM”
+npm install -g expo
+
+Iniciar um novo projeto
+expo init/  npx create-expo-app
+cd na pasta
+
+Executar o projeto no navegador web expo start -w
+ou 
+npx expo start e pressionar w para executar no navegador web
