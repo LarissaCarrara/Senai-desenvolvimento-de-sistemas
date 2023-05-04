@@ -14,7 +14,7 @@ export default function ClientesScreen ({ navigation }){
                
             <FlatList  
                 data={clientes}
-                renderItem={( { item } ) =>  (
+                 renderItem={( { item } ) =>  (
                     <TouchableOpacity 
                         style={styles.item}
                         onPress={() => abrirDetalhes(item)}
@@ -23,7 +23,7 @@ export default function ClientesScreen ({ navigation }){
                         <Text style={styles.text} >Nome: {item.nome} {item.sobrenome}</Text>
                         <Text style={styles.text} >Email: {item.email}</Text>
                         <Text style={styles.text} >Cpf: {item.cpf}</Text>
-                        <Text style={styles.text} >Telefone: {item.telefone}</Text>
+
                     </TouchableOpacity> 
                 )}
                 keyExtractor={item => item.cpf}
