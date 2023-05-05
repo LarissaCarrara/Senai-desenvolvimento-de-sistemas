@@ -2,7 +2,7 @@
 const cursos = 
 [
     {
-        tipo: 'Fic',
+        tipo: 'Formação Inicial e Continuada',
         cursos:
         [
             {
@@ -34,7 +34,7 @@ const cursos =
     },
 
     {
-        tipo: 'Cai',
+        tipo: 'Aprendizagem Industrial',
         cursos:
         [
             {
@@ -53,7 +53,7 @@ const cursos =
     },
 
     {
-        tipo: 'Tec',
+        tipo: 'Técnico',
         cursos:
         [
             {
