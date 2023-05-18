@@ -1,0 +1,142 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&family=Sofia+Sans+Condensed:wght@200&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 60vw;
+    height: 10vh;
+    background-color:#ff4e5a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#select{
+    width: 100px;
+    height: 25px;
+}
+#h1{
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    margin-left: 10px;
+}
+.div_titulo{
+    width: 40%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+}
+#icon{
+    width: 60px;
+    height: 60px;
+}
+.div_Select{
+    width: 30%;
+    height: 100%;
+    /* background-color: azure; */
+    display: flex;
+    align-items: center;
+}
+#carrinho{
+    width: 45px;
+    padding-right: 15px;
+}
+#p_filtrar{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+section{
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: rgb(221, 132, 132);
+}
+.div_listar{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#botao_listar{
+    width: 100px;
+    height: 30px;
+}
+
+thead{
+     display: flex;
+    align-items: center;
+}
+.td{
+    padding-top:20px ;
+    width: 150px;
+    
+}
+.t{
+    width: 150px;
+    /* padding-left: 40px; */
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.botao_cardapio{
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.219);
+}
+.linha{
+    display: flex;
+    justify-content: center;
+}
+.modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corpoModal{
+    position: relative;
+    border: 1px solid #000;
+    top: 20vh;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.oculto{
+    display: none;
+}

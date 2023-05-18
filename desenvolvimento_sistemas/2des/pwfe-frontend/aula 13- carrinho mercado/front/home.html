@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body onload="carregarCardapio()">
+    <header>
+        <div class="div_titulo">
+            <h1 id="h1">Pizzaria</h1>
+            <img src="./assets/icon_restaurante.png" id="icon">
+        </div>
+
+            <img src="./assets/carrinho.png" id="carrinho" onclick="abrirModal()">
+        
+        <!-- <div class="div_listar">
+            <input type="button" value="Listar todos" onclick="listar()" id="botao_listar">
+        </div> -->
+    </header>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th class="td"><u>Id</u></th>
+                    <th class="td"><u>Sabor</u></th>
+                    <th class="td"><u>Ingredientes</u></th>
+                    <th class="td"><u>Preço</u></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div id="detalhes" class="modal oculto">
+            <div class="corpoModal">
+                <h1>Olá eu sou um modal</h1>
+                <button id="btFechar">Fechar</button>
+            </div>
+        </div>
+    </section>
+    <script src="./home.js"></script>
+</body>
+</html>

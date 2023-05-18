@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d8e9eb;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 40vw;
+    height: 50vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://classic.exame.com/wp-content/uploads/2023/01/Exquitiso_Executivo_Estudio-Coma-e1672774399763.jpg?quality=70&strip=info&w=1024");
+    border-radius: 60px;
+}
+.card{
+    width: 30vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#login{
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: white;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+.input{
+    width: 350px;
+    height: 30px;
+}
+label{
+    font-size: 20px;
+    color: white;
+}
+#botao{
+    width: 100px;
+    height: 25px;
+    margin-left: 35%;
+    margin-top: 10px;
+    
+}
