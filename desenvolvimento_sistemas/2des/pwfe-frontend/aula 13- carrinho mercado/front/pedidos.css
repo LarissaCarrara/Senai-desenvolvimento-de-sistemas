@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 60vw;
+    height: 10vh;
+    background-color:#ff4e5a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.div_titulo{
+    width: 40%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+}
+#icon{
+    width: 60px;
+    height: 60px;
+}
+#carrinho{
+    width: 45px;
+    padding-right: 15px;
+}
+section{
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: rgb(221, 132, 132);
+}
+thead{
+    display: flex;
+    align-items: center;
+    
+}
+.td{
+    padding-top:20px ;
+    width: 150px;
+    
+}
+.t{
+    width: 150px;
+    /* padding-left: 40px; */
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.linha{
+    display: flex;
+    justify-content: center;
+}
+.botao_cardapio{
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.219);
+}

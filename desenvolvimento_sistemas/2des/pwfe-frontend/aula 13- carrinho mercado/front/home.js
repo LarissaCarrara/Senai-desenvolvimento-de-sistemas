@@ -2,24 +2,77 @@ const section = document.querySelector("section");
 const tbody = document.querySelector("tbody");
 const select = document.querySelector("#select");
 const btAbrir = document.querySelector("#carrinho");
-const btFechar = document.querySelector("#btFechar");
-const detalhes = document.querySelector("#detalhes")
+const FecharModal = document.querySelector("#x");
+const detalhes = document.querySelector("#detalhes");
+const conteudoModal = document.querySelector('.corpoModal');
+const tbodyModal = document.querySelector("#tbody");
+const thead = document.querySelector('#thead');
+const divTotal = document.querySelector(".soma")
+
+localStorage.clear();
 
 btAbrir.addEventListener('click', () => {
     detalhes.classList.toggle("oculto");
-    carregarDados()
 })
 
-btFechar.addEventListener('click', () => {
+FecharModal.addEventListener('click', () => {
     detalhes.classList.toggle("oculto");
 })
 
+
 function abrirModal() {
-    const dados = [{}]
-    dados = window.localStorage.getItem("info");
+    var dados = {}
+    dados = JSON.parse(window.localStorage.getItem("info"));
     console.log(dados)
+    let total=0;
+    dados.forEach(e =>{
+        
+        if(e != undefined){
+            let ptotal = document.createElement('p');
+            thead.style.display = 'block';
+            
+            const tr = document.createElement("tr");
+            tr.classList = "linha";
+            
+            const pnome = document.createElement("td");
+            pnome.innerHTML = e.nome;
+            pnome.className = "t";
+            
+            const pdescricao = document.createElement("td");
+            pdescricao.innerHTML = e.descricao;
+            pdescricao.classList = "t";
+    
+            const ppreco = document.createElement("td");
+            ppreco.innerHTML = e.preco;
+            ppreco.classList = "t";
+            
+            total += Number(e.preco);
+            console.log(total)
+            ptotal.innerHTML = 'R$'+ total;
+
+            divTotal.innerHTML='';
+            tr.appendChild(pnome);
+            tr.appendChild(pdescricao);
+            tr.appendChild(ppreco);
+            
+            tbodyModal.appendChild(tr);
+            console.log(ptotal)
+            divTotal.appendChild(ptotal);
+        }
+        else{
+            let ptotal = document.createElement('p');
+            ptotal.innerHTML = 0;
+            console.log(ptotal);
+            divTotal.appendChild(ptotal);
+        }
+
+    })
 }
 
+function enviarPedido(){
+    alert('Pedido realizado com sucesso!')
+    window.location.href="./pedidos.html"
+}
 const data = [
     {
         "id": 1,
@@ -321,5 +374,6 @@ function carregarCardapio() {
     })
 }
 
+// PÁGINA PEDIDOS
 
 

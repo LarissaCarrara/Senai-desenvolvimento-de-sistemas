@@ -1,7 +1,4 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&family=Sofia+Sans+Condensed:wght@200&display=swap');
-
-
 *{
     padding: 0;
     margin: 0;
@@ -26,14 +23,6 @@ header {
 
 }
 
-#select{
-    width: 100px;
-    height: 25px;
-}
-#h1{
-    font-family: 'Sofia Sans Condensed', sans-serif;
-    margin-left: 10px;
-}
 .div_titulo{
     width: 40%;
     height: 100%;
@@ -83,8 +72,12 @@ section{
 }
 
 thead{
-     display: flex;
+    display: flex;
     align-items: center;
+    
+}
+#thead{
+    display: none;
 }
 .td{
     padding-top:20px ;
@@ -126,6 +119,9 @@ table{
 }
 
 .corpoModal{
+    padding: 1rem;
+    border-radius: 10px;
+
     position: relative;
     border: 1px solid #000;
     top: 20vh;
@@ -135,8 +131,46 @@ table{
     flex-direction: column;
     align-items: center;
     background-color: #fff;
+    overflow-y: scroll;
 }
+
 
 .oculto{
     display: none;
+}
+
+
+#x{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    width: 20px;
+}
+.div_total{
+    margin-left: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.titotal{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#total{
+    margin-right: 10px;
+    
+}
+#botao_enviar{
+    position: absolute;
+    bottom: 5px;
+    left: 68px;
+    height: 30px;
+    width: 120px;
+
+}
+.a{
+    color: #000;
 }

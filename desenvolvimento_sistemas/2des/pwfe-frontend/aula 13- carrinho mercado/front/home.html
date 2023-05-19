@@ -13,7 +13,8 @@
             <h1 id="h1">Pizzaria</h1>
             <img src="./assets/icon_restaurante.png" id="icon">
         </div>
-
+        
+            <a class="a" href="./pedidos.html">Pedidos</a>
             <img src="./assets/carrinho.png" id="carrinho" onclick="abrirModal()">
         
         <!-- <div class="div_listar">
@@ -37,8 +38,31 @@
 
         <div id="detalhes" class="modal oculto">
             <div class="corpoModal">
-                <h1>Olá eu sou um modal</h1>
-                <button id="btFechar">Fechar</button>
+                <h1 id="titulo">Carrinho</h1>
+                <img src="./assets/x.png" id="x">
+                <table>
+                    <thead id="thead">
+                        <tr>
+                            <th class="td">Sabor</th>
+                            <th class="td">ingredientes</th>
+                            <th class="td">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+
+                    
+                </table>
+                <div class="div_total">
+                    <div class="titotal">
+                        <h3 id="total">Total:</h3>
+                    </div>
+                    
+                    <div class="soma">
+                        
+                    </div>
+
+                    <input type="button" id= "botao_enviar" value="Finalizar pedido" onclick="enviarPedido()">
+                </div>
             </div>
         </div>
     </section>
