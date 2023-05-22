@@ -7,10 +7,11 @@ const detalhes = document.querySelector("#detalhes");
 const conteudoModal = document.querySelector('.corpoModal');
 const tbodyModal = document.querySelector("#tbody");
 const thead = document.querySelector('#thead');
-const divTotal = document.querySelector(".soma")
+const divTotal = document.querySelector(".soma");
+const pop = document.querySelector(".pop");
+let tableModal = document.querySelector("#tableModal");
 
-localStorage.clear();
-
+// window.localStorage.clear()
 btAbrir.addEventListener('click', () => {
     detalhes.classList.toggle("oculto");
 })
@@ -21,11 +22,9 @@ FecharModal.addEventListener('click', () => {
 
 
 function abrirModal() {
-    var dados = {}
-    dados = JSON.parse(window.localStorage.getItem("info"));
-    console.log(dados)
     let total=0;
-    dados.forEach(e =>{
+    tbodyModal.innerHTML = ''
+    dadosCarrinho.forEach(e =>{
         
         if(e != undefined){
             let ptotal = document.createElement('p');
@@ -48,7 +47,7 @@ function abrirModal() {
             
             total += Number(e.preco);
             console.log(total)
-            ptotal.innerHTML = 'R$'+ total;
+            ptotal.innerHTML = ('R$'+ (total).toFixed(2));
 
             divTotal.innerHTML='';
             tr.appendChild(pnome);
@@ -69,10 +68,83 @@ function abrirModal() {
     })
 }
 
+let dadosCarrinho = JSON.parse(window.localStorage.getItem('info')) || [];
+
 function enviarPedido(){
+    const info2 =  JSON.parse(window.localStorage.getItem("info2")) || [];
+    window.localStorage.setItem("info", JSON.stringify([]));
+    window.localStorage.setItem("info2", JSON.stringify([...dadosCarrinho, ...info2]));
+    const qtds = JSON.parse(window.localStorage.getItem("qtds")) || [];
+    window.localStorage.setItem("qtds", JSON.stringify([...qtds,dadosCarrinho.length]));
+    dadosCarrinho = [];
+    tbodyModal.innerHTML = '';
     alert('Pedido realizado com sucesso!')
+
     window.location.href="./pedidos.html"
 }
+
+
+function carregarCardapio() {
+    
+    data.forEach(element => {
+        const tr = document.createElement("tr");
+        tr.classList = "linha";
+        
+        const pid = document.createElement("td");
+        pid.innerHTML = element.id;
+        pid.classList = "t";
+        
+        const pnome = document.createElement("td");
+        pnome.innerHTML = element.nome;
+        pnome.className = "t";
+        
+        const pdescricao = document.createElement("td");
+        pdescricao.innerHTML = element.descricao;
+        pdescricao.classList = "t";
+        
+        const ppreco = document.createElement("td");
+        ppreco.innerHTML = element.preco;
+        ppreco.classList = "t";
+        
+        const botao_cardapio = document.createElement("button");
+        botao_cardapio.innerHTML = "Adicionar";
+        botao_cardapio.className = "botao_cardapio";
+        
+        // pega os itens do localstorage
+        const newDadosCarrinho = JSON.parse(window.localStorage.getItem('info')) || [];
+        // coloco na variavel dadosCarrinho
+        dadosCarrinho = [...newDadosCarrinho]
+
+        botao_cardapio.addEventListener("click", () => {
+            pop.style.display = "flex"
+            setTimeout(()=>{
+                pop.style.display= 'none'
+            }, 1000)
+            console.log({dadosCarrinho})
+            const pizza = {
+                "id": pid.innerHTML,
+                "nome": pnome.innerHTML,
+                "descricao": pdescricao.innerHTML,
+                "preco": ppreco.innerHTML
+            }
+            dadosCarrinho.push(pizza)
+            // window.localStorage.setItem("info", JSON.stringify(dadosCarrinho));
+        })
+        
+        tr.appendChild(pid);
+        tr.appendChild(pnome);
+        tr.appendChild(pdescricao);
+        tr.appendChild(ppreco);
+        tr.appendChild(botao_cardapio);
+
+        tbody.appendChild(tr);
+
+    })
+}
+
+// PÁGINA PEDIDOS
+
+
 const data = [
     {
         "id": 1,
@@ -321,59 +393,3 @@ const data = [
         "preco": 29.09
     }
 ]
-
-function carregarCardapio() {
-
-
-    data.forEach(element => {
-        const tr = document.createElement("tr");
-        tr.classList = "linha";
-
-        const pid = document.createElement("td");
-        pid.innerHTML = element.id;
-        pid.classList = "t";
-
-        const pnome = document.createElement("td");
-        pnome.innerHTML = element.nome;
-        pnome.className = "t";
-
-        const pdescricao = document.createElement("td");
-        pdescricao.innerHTML = element.descricao;
-        pdescricao.classList = "t";
-
-        const ppreco = document.createElement("td");
-        ppreco.innerHTML = element.preco;
-        ppreco.classList = "t";
-
-        const botao_cardapio = document.createElement("button");
-        botao_cardapio.innerHTML = "Adicionar";
-        botao_cardapio.className = "botao_cardapio";
-
-        botao_cardapio.addEventListener("click", () => {
-            const dadosCarrinho = JSON.parse(window.localStorage.getItem('info')) || [];
-            console.log({dadosCarrinho})
-            const pizza = {
-                "id": pid.innerHTML,
-                "nome": pnome.innerHTML,
-                "descricao": pdescricao.innerHTML,
-                "preco": ppreco.innerHTML
-            }
-            dadosCarrinho.push(pizza)
-            window.localStorage.setItem("info", JSON.stringify(dadosCarrinho));
-        })
-
-
-        tr.appendChild(pid);
-        tr.appendChild(pnome);
-        tr.appendChild(pdescricao);
-        tr.appendChild(ppreco);
-        tr.appendChild(botao_cardapio);
-
-        tbody.appendChild(tr);
-
-    })
-}
-
-// PÁGINA PEDIDOS
-
-
