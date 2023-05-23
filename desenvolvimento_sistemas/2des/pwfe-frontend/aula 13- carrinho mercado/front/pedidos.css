@@ -41,7 +41,6 @@ section{
     width: 100%;
     min-width: max-content;
     height: auto;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +70,8 @@ table{
     flex-direction: column;
     justify-content: center;
     border-collapse: collapse;
+    height: auto;
+    
   
 }
 .linha{

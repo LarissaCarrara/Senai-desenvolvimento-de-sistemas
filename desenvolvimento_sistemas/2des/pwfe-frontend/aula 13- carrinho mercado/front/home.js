@@ -83,6 +83,7 @@ function enviarPedido(){
     window.location.href="./pedidos.html"
 }
 
+6
 
 function carregarCardapio() {
     
@@ -121,11 +122,13 @@ function carregarCardapio() {
                 pop.style.display= 'none'
             }, 1000)
             console.log({dadosCarrinho})
+          
             const pizza = {
                 "id": pid.innerHTML,
                 "nome": pnome.innerHTML,
                 "descricao": pdescricao.innerHTML,
-                "preco": ppreco.innerHTML
+                "preco": ppreco.innerHTML,
+                "data": formatarData(new Date())
             }
             dadosCarrinho.push(pizza)
             // window.localStorage.setItem("info", JSON.stringify(dadosCarrinho));
@@ -393,3 +396,4 @@ const data = [
         "preco": 29.09
     }
 ]
+
