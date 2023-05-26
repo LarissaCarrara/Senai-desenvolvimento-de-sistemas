@@ -83,7 +83,7 @@ function enviarPedido(){
     window.location.href="./pedidos.html"
 }
 
-6
+
 
 function carregarCardapio() {
     
