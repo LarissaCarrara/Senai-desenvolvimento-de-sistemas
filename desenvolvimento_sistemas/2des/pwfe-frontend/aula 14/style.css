@@ -1,79 +1,84 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section{
-    width: 40vw;
-    height: 40vh;
-    background-color: white;
-    border-radius: 20px;
-}
-.titulo{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.input{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.input2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-h3{
-    margin-right: 10px;
-}
-.input_text{
-    width: 60%;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid black;
-    outline: none;
-}
-.input3{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#botao_login{
-    width: 20%;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid black;
-    outline: none;
-    background-color: #1c8af0;
-    cursor: pointer;
-    color: white;
-    margin-top: 15px;
-}
-.tudo{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#botao_login:hover{
-    background-color: #62a6e6;
+section {
+  width: 40vw;
+  height: 40vh;
+  background-color: white;
+  border-radius: 20px;
+}
+.titulo {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.input2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  margin-right: 10px;
+}
+#email,
+#senha,
+#botao_login {
+  padding: 10px;
+}
+.input_text {
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+.input3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#botao_login {
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  background-color: #1c8af0;
+  cursor: pointer;
+  color: white;
+  margin-top: 15px;
+}
+.tudo {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#botao_login:hover {
+  background-color: #62a6e6;
 }

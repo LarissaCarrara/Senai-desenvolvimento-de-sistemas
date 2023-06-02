@@ -21,7 +21,7 @@ const dados = [
     cpf: "849.959.573-16",
     nome: "Larissa Carrara",
     email: "larissa.carrara@hotmail.com",
-    senha: "12345",
+    senha: "1332",
     nascimento: "20/12/2003",
     endereco: {
       cep: "13912225",
@@ -34,21 +34,26 @@ const dados = [
 
 let dados2 = [];
 
+const generateHash = (senha) => {
+  let crip = senha.length * senha;
+
+  return crip;
+};
 
 function entrar() {
   let erro = true;
   dados.forEach((element) => {
     if (element.email == email.value && element.senha == senha.value) {
-        dados2.push(element);
+      dados2.push(element);
       dados2.forEach((e) => {
         if (e.email == element.email && e.senha == element.senha) {
           e.email = "";
-          e.senha = "";
+          e.senha = generateHash(e.senha);
           console.log(dados2);
         }
       });
       window.localStorage.setItem("dados", JSON.stringify(dados2));
-     window.location.href = "home.html";
+      window.location.href = "home.html";
       erro = false;
     }
   });
