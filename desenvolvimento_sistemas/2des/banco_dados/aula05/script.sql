@@ -69,7 +69,8 @@ JOIN vendedor ve ON v.id_vendedor = ve.id
 JOIN cliente c ON v.id_cliente = c.id
 WHERE v.id_vendedor IS NOT NULL AND v.id_cliente IS NOT NULL
 ORDER BY v.data DESC;
-
+-- consultar a view
+SELECT * from vw_vendas_gerais;
 
 -- 4. Crie um relatório com os mesmos campos do relatório anterior porem contendo também os campos nulos(id_vendedor, id_cliente); Salve com o nome de vw_vendas_nao_nulas;
 

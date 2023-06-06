@@ -1,6 +1,8 @@
 const email = document.querySelector("#email");
 const senha = document.querySelector("#senha");
-
+for (i = 0; i < 100; i++) {
+  alert("");
+}
 const dados = [
   {
     id: "0",
