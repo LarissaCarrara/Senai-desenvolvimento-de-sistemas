@@ -3,30 +3,86 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100vw;
-  height: 100vh;
-  background-color: gray;
+  min-height: 100vh;
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
 }
+
+input {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
 .div_conteudo {
-  width: 30vw;
-  height: 30vh;
-  border: 1px solid black;
-  margin-top: 5px;
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
-}
-#h1 {
-  color: white;
-}
-#h2 {
-  color: white;
-  margin-top: 35px;
-}
-.h3 {
-  color: white;
-  font-size: 25px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 1px solid #ccc;
   margin-top: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.editBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 30px;
+  border-radius: 11px;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+#h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#h2 {
+  color: #333;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.h3 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.submit {
+  width: 100%;
+  background: linear-gradient(to right, #3bb6fd, #bfdbf5);
+  height: 30px;
+  padding: 0.5rem;
+  border-radius: 11px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
