@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text, Button } from "react-native";
 
-const QuizScreen = ({ navigation }) => {
+const QuizScreen = ({ navigation, ...rest }) => {
+  console.log(...rest)
+  const [steps, setSteps] = useState([
+    {pergunta: ""}
+  ])
+
   return (
+    
     <View>
       <Text>Perguntas</Text>
       {/* Adicione as perguntas e alternativas aqui */}
