@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(136, 70, 70, 0.938);
+}
+.card{
+    background-color: rgba(153, 144, 144, 0.329);
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+}
+.input{
+    display: flex;
+    margin: 0 0 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+.botao{
+    width: 75%;
+    height: 25px;
+    margin-top: 15px;
+    background-color: rgba(122, 55, 55, 0.349);
+    border: none;
+}
+.divbotao{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    width: 60%;
+    height: 30px;
+}
+h3{
+  
+}
+.login{
+    position: absolute;
+    top: 10px;
+    left: 200;
+}
