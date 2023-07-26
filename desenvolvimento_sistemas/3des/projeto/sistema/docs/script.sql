@@ -5,6 +5,8 @@ use restaurante;
 CREATE TABLE cliente(
     cpf INT NOT NULL PRIMARY KEY,
     nome VARCHAR(30) NOT NULL,
+    email VARCHAR(30) NOT NULL,
+    senha password(20) NOT NULL,
     logradouro VARCHAR(30) NOT NULL,
     complemento VARCHAR(30),
     bairro VARCHAR(30) NOT NULL
