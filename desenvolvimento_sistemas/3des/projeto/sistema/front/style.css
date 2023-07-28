@@ -10,12 +10,45 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(136, 70, 70, 0.938);
+    background-image: url("./assets/culinária-regional-brasileira.png");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.divlogo{
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 350px;
+}
+.transparente1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.transparente2{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camada{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.405);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .card{
-    background-color: rgba(153, 144, 144, 0.329);
+    background-color: rgba(226, 219, 219, 0.535);
     width: 40%;
-    height: 40%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,31 +57,31 @@ body{
     position: relative;
 }
 .input{
+    height: 40px;
+    width: 70%;
     display: flex;
     margin: 0 0 10px 0;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+    border: none;
 }
 .botao{
     width: 75%;
     height: 25px;
     margin-top: 15px;
-    background-color: rgba(122, 55, 55, 0.349);
+    background-color: rgba(39, 16, 16, 0.349);
     border: none;
+    border-radius: 10px;
+    font-size: 17px;
 }
 .divbotao{
-    width: 60%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.input{
-    width: 60%;
-    height: 30px;
-}
-h3{
-  
-}
+
 .login{
     position: absolute;
     top: 10px;

@@ -3,10 +3,10 @@ CREATE DATABASE restaurante;
 use restaurante;
 
 CREATE TABLE cliente(
-    cpf INT NOT NULL PRIMARY KEY,
+    cpf VARCHAR(30) NOT NULL PRIMARY KEY,
     nome VARCHAR(30) NOT NULL,
     email VARCHAR(30) NOT NULL,
-    senha password(20) NOT NULL,
+    senha VARCHAR(20) NOT NULL,
     logradouro VARCHAR(30) NOT NULL,
     complemento VARCHAR(30),
     bairro VARCHAR(30) NOT NULL
@@ -16,12 +16,12 @@ CREATE TABLE telefone(
     cpf_telefone INT NOT NULL,
     telefone VARCHAR(15) NOT NULL,
     FOREIGN KEY(cpf_telefone) REFERENCES cliente(cpf)
-)
+);
 CREATE TABLE pedidos(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     cliente_cpf INT NOT NULL,
     nome VARCHAR(30) NOT NULL,
-    total DECIMAL(4,2).
+    total DECIMAL(4,2),
     qtd INT NOT NULL,
     status VARCHAR(10) NOT NULL,
     FOREIGN KEY(cliente_cpf) REFERENCES cliente(cpf)
@@ -38,10 +38,14 @@ CREATE TABLE item_pedido(
     id_cardapio INT NOT NULL,  
     qtd INT NOT NULL,
     FOREIGN KEY(id_pedido) REFERENCES pedidos(id),
-    FOREIGN KEY(id_item) REFERENCES cardapio(id_cardapio)
+    FOREIGN KEY(id_cardapio) REFERENCES cardapio(id)
 );
 
 CREATE TABLE motoboy(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(30) NOT NULL
-)
+);
+
+insert into cliente values(
+    '52730165843', 'Larissa Carrara', 'larissa.carrara@hotmail.com', '123', 'rua das ruas', '', 'maua'
+);

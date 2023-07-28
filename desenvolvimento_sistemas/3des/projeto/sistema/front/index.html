@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,35 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="style.css">
-<body>
-    <div class="card">
-        <h1 class="login">Login</h1>
-        <div class="input">
-            <h3>Email:</h3>
-            <input type="text" class="input">
-        </div>
 
-        <div class="input">
-            <h3>Senha:</h3>
-            <input type="password" class="input">
+<body>
+    <div class="camada">
+        <div class="transparente1">
+            <div class="divlogo">
+                <img src="./assets/png-transparent-restaurant-menu-delivery-brand-dish-service-in-place-label-service-logo-removebg-preview.png"
+                    id="logo">
+            </div>
         </div>
-        <div class="divbotao">
-            <input type="button" value="Entrar" class="botao">
+        <div class="transparente2">
+
+            <div class="card">
+                <h1 class="login">Login</h1>
+                <div class="input">
+                    <h3>EMAIL:</h3>
+                    <input type="text" class="input" id="email">
+                </div>
+
+                <div class="input">
+                    <h3>SENHA: </h3>
+                    <input type="password" class="input" id="senha">
+                </div>
+                <div class="divbotao">
+                    <input type="button" value="Entrar" class="botao" onclick="login()">
+                </div>
+            </div>
         </div>
     </div>
 </body>
 <script src="./script.js"></script>
+
 </html>

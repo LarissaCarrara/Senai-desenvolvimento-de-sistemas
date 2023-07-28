@@ -16,16 +16,14 @@ const cadastrar = (req, res) => {
 const login = (req, res) => {
     const { email, senha } = req.body;
     console.log(req.body);
-    let query = `SELECT * FROM cliente WHERE cliente.email = '${email}'`; //montando string
+    let query = `SELECT * FROM cliente WHERE email = '${email}' and senha = password('${senha}')`; //montando string
 
     con.query(query, (err, response) => {
         console.log(response);
-        if (response.length > 0) {
-            if (password(response[0].senha) == senha) {
-                res.status(202).end();
-            }
-        } else {
-            res.status(404).json(err).end();
+        if(err == undefined){
+            res.status(200).json(response).end();
+        }else{
+            res.status(400).json(err).end();
         }
     });
 }

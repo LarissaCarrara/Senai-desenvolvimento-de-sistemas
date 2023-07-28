@@ -5,10 +5,10 @@ const restaurante = require('../controllers/restaurante.controller');
 
 
  router.post('/login', restaurante.login);
+// router.post('/login', (req, res)=> {res.send('testando')})
  router.get('/listar', restaurante.listar);
  router.get('/listar/:categoriaid', restaurante.filtrar);
  router.get('/listar/cardapio/:categoriaid', restaurante.listarCardapio);
- router.get('/categoria', restaurante.categoria);
  
 // router.put('/update', restaurante.alterar);
 // router.delete('/del/:id', restaurante.excluir);
