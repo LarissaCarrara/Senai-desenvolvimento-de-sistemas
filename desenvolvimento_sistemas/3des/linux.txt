@@ -1,0 +1,9 @@
+pwd - para saber o diretório que estou
+cd - entrar em diretório/pastas
+ls - listar arquivos
+vi- criar e editar arquivos
+esc + x - remove o texto
+esc + dd - remove a linha
+esc + : - salvar arquivo digitando w
+esc + : - digita q sai do arquivo 
+w- mostra quem está conectado no servidor

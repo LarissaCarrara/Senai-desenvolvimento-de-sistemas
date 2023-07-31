@@ -20,10 +20,11 @@ function login(){
             return resp.json();
         })
         .then(data => {
-            window.location.href = 'home.html';
-            console.log(data);
-            // if (data == 200) {
-            // console.log(data)
-            // }
+            if (data) {
+                console.log(data);
+               // window.location.href = 'home.html';
+            }else{
+                alert('Login ou senha inválido');
+            }
         })
 }

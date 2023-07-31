@@ -1,32 +1,60 @@
 const con = require('../dao/connect');
 
 
+const bcrypt = require('bcrypt');
+const saltRounds = 10; // Define o número de salt rounds (geralmente 10 é um bom valor)
+
 const cadastrar = (req, res) => {
-    const { nome, email, senha } = req.body;
-    let query = `INSERT INTO cliente (nome, email, senha) VALUES ('${nome}','${email}','${password(senha)}')`
-    con.query(query, (err,response) => {
-        if(err == undefined){
-            res.status(200).json(response).end();
-        }else{
-            res.status(400).json(err).end();
+    const { cpf, nome, email, senha, logradouro, bairro } = req.body;
+
+    // Criptografa a senha usando bcrypt
+    bcrypt.hash(senha, saltRounds, (err, hash) => {
+        if (err) {
+            res.status(500).json({ error: 'Erro ao criptografar a senha.' }).end();
+        } else {
+            const query = 'INSERT INTO cliente (cpf, nome, email, senha, logradouro, bairro) VALUES (?, ?, ?, ?, ?, ?)';
+            const values = [cpf, nome, email, hash, logradouro, bairro];
+
+            con.query(query, values, (err, response) => {
+                if (err) {
+                    res.status(400).json(err).end();
+                } else {
+                    res.status(200).json(response).end();
+                }
+            });
         }
-})
-}
+    });
+};
+
 
 const login = (req, res) => {
     const { email, senha } = req.body;
-    console.log(req.body);
-    let query = `SELECT * FROM cliente WHERE email = '${email}' and senha = password('${senha}')`; //montando string
+    const query = 'SELECT * FROM cliente WHERE email = ?';
 
-    con.query(query, (err, response) => {
-        console.log(response);
-        if(err == undefined){
-            res.status(200).json(response).end();
-        }else{
-            res.status(400).json(err).end();
+    con.query(query, [email], (err, rows) => {
+        if (err || rows.length === 0) {
+            res.status(400).json({
+                error: true,
+                log: err || 'Usuário não encontrado.'
+            }).end();
+        } else {
+            const hash = rows[0].senha;
+
+            bcrypt.compare(senha, hash, (compareErr, isMatch) => {
+                if (compareErr || !isMatch) {
+                    res.status(400).json({
+                        error: true,
+                        log: 'Credenciais inválidas.'
+                    }).end();
+                } else {
+                    res.status(200).json({
+                        success: true
+                    }).end();
+                }
+            });
         }
     });
-}
+};
 
 const listar = (req, res) =>{
     let query = "SELECT restaurante.id, restaurante.nome, restaurante.endereco, categoria.nome as categoria FROM restaurante INNER JOIN categoria ON restaurante.categoriaid = categoria.id";
