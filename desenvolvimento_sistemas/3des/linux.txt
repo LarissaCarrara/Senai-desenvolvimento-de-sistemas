@@ -7,3 +7,9 @@ esc + dd - remove a linha
 esc + : - salvar arquivo digitando w
 esc + : - digita q sai do arquivo 
 w- mostra quem está conectado no servidor
+esc :%s/larissa/camacho - troca larissa por camacho
+esc y y p - copia e cola
+esc:set nu - aparece o nº das linhas
+esc linha G
+esc r letra q quer substituir
+esc /palavra q quer localizar (n para ie para a próxima)

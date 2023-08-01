@@ -6,7 +6,7 @@ CREATE TABLE cliente(
     cpf VARCHAR(30) NOT NULL PRIMARY KEY,
     nome VARCHAR(30) NOT NULL,
     email VARCHAR(30) NOT NULL,
-    senha VARCHAR(20) NOT NULL,
+    senha VARCHAR(150) NOT NULL,
     logradouro VARCHAR(30) NOT NULL,
     complemento VARCHAR(30),
     bairro VARCHAR(30) NOT NULL

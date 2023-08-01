@@ -20,6 +20,7 @@ function login(){
             return resp.json();
         })
         .then(data => {
+            console.log(data)
             if (data) {
                 console.log(data);
                // window.location.href = 'home.html';

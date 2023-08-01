@@ -2,12 +2,13 @@ const con = require('../dao/connect');
 
 
 const bcrypt = require('bcrypt');
-const saltRounds = 10; // Define o número de salt rounds (geralmente 10 é um bom valor)
-
-const cadastrar = (req, res) => {
+let saltRounds
+const cadastrar = async (req, res) => {
     const { cpf, nome, email, senha, logradouro, bairro } = req.body;
 
+    saltRounds = await bcrypt.genSalt(1)
     // Criptografa a senha usando bcrypt
+    console.log(saltRounds)
     bcrypt.hash(senha, saltRounds, (err, hash) => {
         if (err) {
             res.status(500).json({ error: 'Erro ao criptografar a senha.' }).end();
@@ -29,19 +30,17 @@ const cadastrar = (req, res) => {
 
 const login = (req, res) => {
     const { email, senha } = req.body;
-    const query = 'SELECT * FROM cliente WHERE email = ?';
-
-    con.query(query, [email], (err, rows) => {
-        if (err || rows.length === 0) {
+    const query = `SELECT * FROM cliente WHERE email = '${email}'`;
+    con.query(query, async (err, rows) => {
+        if (err || rows.length == 0) {
             res.status(400).json({
                 error: true,
                 log: err || 'Usuário não encontrado.'
             }).end();
         } else {
             const hash = rows[0].senha;
-
             bcrypt.compare(senha, hash, (compareErr, isMatch) => {
-                if (compareErr || !isMatch) {
+                if (!isMatch) {
                     res.status(400).json({
                         error: true,
                         log: 'Credenciais inválidas.'

@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/culinária-regional-brasileira.png");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h3{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+h3{
+    margin-left: 25px;
+    color: white;
+}
+.divlogo{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 200px;
+}
+
+.camada{
+    height:100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.405);
+}
