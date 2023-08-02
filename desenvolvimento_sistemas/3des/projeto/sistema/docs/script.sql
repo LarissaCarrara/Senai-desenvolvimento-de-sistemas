@@ -29,6 +29,7 @@ CREATE TABLE pedidos(
 
 CREATE TABLE cardapio(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    sabor VARCHAR(30) NOT NULL,
     preco DECIMAL(5,2),
     descricao VARCHAR(15)
 );
@@ -48,4 +49,25 @@ CREATE TABLE motoboy(
 
 insert into cliente values(
     '52730165843', 'Larissa Carrara', 'larissa.carrara@hotmail.com', '123', 'rua das ruas', '', 'maua'
+);
+insert into cardapio values(
+    '', '3 queijos', 50, 'queijos variados'
+);
+insert into cardapio values(
+    '', '3 queijos', 50, 'queijos variados'
+);
+insert into cardapio values(
+    '', '3 queijos', 50, 'queijos variados'
+);
+insert into cardapio values(
+    '', '3 queijos', 50, 'queijos variados'
+);
+insert into cardapio values(
+    '', '3 queijos', 50, 'queijos variados'
+);
+insert into cardapio values(
+    '', '3 queijos', 50, 'queijos variados'
+);
+insert into cardapio values(
+    '', '3 queijos', 50, 'queijos variados'
 );

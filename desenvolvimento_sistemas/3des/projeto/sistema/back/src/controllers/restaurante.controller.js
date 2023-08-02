@@ -56,7 +56,7 @@ const login = (req, res) => {
 };
 
 const listar = (req, res) =>{
-    let query = "SELECT restaurante.id, restaurante.nome, restaurante.endereco, categoria.nome as categoria FROM restaurante INNER JOIN categoria ON restaurante.categoriaid = categoria.id";
+    let query = "SELECT * FROM cardapio";
 
 
     con.query(query, (err,response) => {

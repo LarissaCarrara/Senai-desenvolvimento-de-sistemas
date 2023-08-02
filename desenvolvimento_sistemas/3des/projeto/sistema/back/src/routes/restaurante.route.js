@@ -6,8 +6,6 @@ const restaurante = require('../controllers/restaurante.controller');
 
  router.post('/login', restaurante.login);
  router.get('/cadastrar', restaurante.cadastrar);
-
-// router.post('/login', (req, res)=> {res.send('testando')})
  router.get('/listar', restaurante.listar);
  router.get('/listar/:categoriaid', restaurante.filtrar);
  router.get('/listar/cardapio/:categoriaid', restaurante.listarCardapio);

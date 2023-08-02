@@ -47,3 +47,32 @@ h3{
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.405);
 }
+.section {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+th{
+    color: white;
+    width: 150px;
+}
+.tabela{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+.t{
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+tr{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}

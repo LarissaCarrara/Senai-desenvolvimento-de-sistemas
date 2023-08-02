@@ -23,7 +23,7 @@ function login(){
             console.log(data)
             if (data) {
                 console.log(data);
-               // window.location.href = 'home.html';
+                window.location.href = 'home.html';
             }else{
                 alert('Login ou senha inválido');
             }
