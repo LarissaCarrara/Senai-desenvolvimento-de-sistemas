@@ -21,7 +21,7 @@ function login(){
         })
         .then(data => {
             console.log(data)
-            if (data) {
+            if (data.success == true) {
                 console.log(data);
                 window.location.href = 'home.html';
             }else{

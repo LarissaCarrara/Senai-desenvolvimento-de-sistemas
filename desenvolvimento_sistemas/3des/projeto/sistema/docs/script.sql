@@ -13,13 +13,13 @@ CREATE TABLE cliente(
 );
 
 CREATE TABLE telefone(
-    cpf_telefone INT NOT NULL,
+    cpf_telefone VARCHAR(30) NOT NULL,
     telefone VARCHAR(15) NOT NULL,
     FOREIGN KEY(cpf_telefone) REFERENCES cliente(cpf)
 );
 CREATE TABLE pedidos(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    cliente_cpf INT NOT NULL,
+    cliente_cpf VARCHAR(30) NOT NULL,
     nome VARCHAR(30) NOT NULL,
     total DECIMAL(4,2),
     qtd INT NOT NULL,
