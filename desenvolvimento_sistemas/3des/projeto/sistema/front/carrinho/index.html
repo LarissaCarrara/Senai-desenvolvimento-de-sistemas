@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="carrinho.css">
 
 <body>
     <div class="camada">
         <div class="header">
             <div class="divlogo">
-                <img src="./assets/png-transparent-restaurant-menu-delivery-brand-dish-service-in-place-label-service-logo-removebg-preview.png"
+                <img src="../assets/png-transparent-restaurant-menu-delivery-brand-dish-service-in-place-label-service-logo-removebg-preview.png"
                     id="logo">
             </div>
             <div class="h3">
-                <h3>Cardápio</h3>
-                <h3>Carrinho</h3>
-                <a href="./index.html"><h3>Sair</h3></a>
+                <h5>Cardápio</h5>
+                <h5><u>Carrinho</u></h5>
+                <a href="../login"><h5>Sair</h5></a>
 
             </div>
         </div>
@@ -31,12 +31,12 @@
                     <thead>
                         <tr>
 
-                            <th> N°</th>
-                            <th> Sabor</th>
-                            <th> Descrição</th>
-                            <th> Preço</th>
-                            <th> adicionar ou reduzir</th>
-                            <th> Quantidade</th>
+                            <th class="th"> N°</th>
+                            <th class="th"> Sabor</th>
+                            <th class="th"> Descrição</th>
+                            <th class="th"> Preço</th>
+                            <th class="th"> Quantidade</th>
+                            <th class="th"> Remover</th>
 
                         </tr>
                     </thead>
@@ -45,12 +45,12 @@
                     </tbody>
     
                 </table>
-                <input type="button" value="Ir para o carrinho" class="btn-finalizar">
+                <input type="button" value="Finalizar pedido" class="btn-carrinho" onclick="carrinho()">
             </div>
         </div>
 
     </div>
 </body>
-<script src="./home.js"></script>
+<script src="./carrinho.js"></script>
 
 </html>

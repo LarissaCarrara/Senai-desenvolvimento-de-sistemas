@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("./assets/culinária-regional-brasileira.png");
+    background-image: url("../assets/culinária-regional-brasileira.png");
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -27,7 +27,7 @@ body{
     align-items: center;
     margin-right: 10px;
 }
-h3{
+h5{
     margin-left: 25px;
     color: white;
 }
@@ -39,7 +39,7 @@ h3{
 }
 
 #logo{
-    width: 200px;
+    width: 15%;
 }
 
 .camada{
@@ -67,10 +67,10 @@ th{
     background-color: rgba(0, 0, 0, 0.267);
     position: relative;
 }
-.btn-finalizar{
+.btn-carrinho{
     position: absolute;
     bottom: 10px;
-    height: 5%;
+    height: 7%;
     width: 15%;
     background-color: rgba(255, 255, 255, 0.67);
     border-radius: 10px;
@@ -86,6 +86,10 @@ table{
     color: white;
     width: 150px;
     text-align: center;
+    font-size: 12px;
+}
+.th{
+    font-size:15px
 }
 
 tr{

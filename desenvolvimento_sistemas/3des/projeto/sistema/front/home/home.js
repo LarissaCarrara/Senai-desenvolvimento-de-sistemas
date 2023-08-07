@@ -6,7 +6,9 @@ const tbody = document.querySelector("#tbody");
 //         url = 'http://localhost:3000/listar/' + idCategoria
 //     }
 
-
+function carregar(){
+    localStorage.clear()
+}
 fetch('http://localhost:3000/listar')
     .then(resp => {
         return resp.json();
@@ -77,10 +79,47 @@ fetch('http://localhost:3000/listar')
                     // Atualiza a quantidade exibida
                     atualizarQuantidade(element, quantidade);
                 });
+                const dados = {
+                    descricao: '',
+                    quantidade: 0
+                };
+
                 // Função para atualizar a quantidade exibida
                 function atualizarQuantidade(element, quantidade) {
                     console.log(element,quantidade )
                     quantidadeElement.innerHTML = quantidade;
+                    //string.innerHTML = 
+                    dados.descricao = element
+                    dados.quantidade = quantidade
+                    let flag = false
+                    const items = localStorage.getItem("dados")
+                    if (items) {
+                        const newItems = JSON.parse(items);
+
+                        //verifica se ja tem e se tiver so adiciona quantidade
+                        //se nao adiciona o item todo
+                        newItems.forEach(item =>{
+                            console.log(item)
+                            console.log({
+                                recebido: item.descricao.id,
+                                enviado: element.id
+                            })
+                            if(item.descricao.id == element.id){
+                                console.log("entrou no if")
+                                item.quantidade++
+                                flag = true
+                            }
+                        })
+                        if(!flag) newItems.push(dados)
+                        const strNewItems = JSON.stringify(newItems)
+                        localStorage.setItem('dados', strNewItems)
+                        
+                        return
+                    }
+                    
+                    const dadosString = JSON.stringify([dados])
+                    // localStorage.setItem({"quantidade": quantidade, "descricao": element});
+                    localStorage.setItem('dados', dadosString);
                 }
                 
                 tr.appendChild(pid);
@@ -101,4 +140,13 @@ fetch('http://localhost:3000/listar')
             })
         }
     })
+
+    function carrinho(){
+        const items = localStorage.getItem("dados")
+        if(items){
+            window.location.href = '../carrinho';
+        }else{
+            alert("Adicione itens ao carrinho")
+        }
+    }
 

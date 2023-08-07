@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("./assets/culinária-regional-brasileira.png");
+    background-image: url("../assets/culinária-regional-brasileira.png");
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -22,7 +22,7 @@ body{
 }
 
 #logo{
-    width: 350px;
+    width: 15%;
 }
 .transparente1{
     width: 100%;
