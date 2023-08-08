@@ -27,7 +27,7 @@ body{
     align-items: center;
     margin-right: 10px;
 }
-h5{
+h3{
     margin-left: 25px;
     color: white;
 }
@@ -86,10 +86,10 @@ table{
     color: white;
     width: 150px;
     text-align: center;
-    font-size: 12px;
+    font-size: 17px;
 }
 .th{
-    font-size:15px
+    font-size:19px
 }
 
 tr{
@@ -97,11 +97,7 @@ tr{
     align-items: center;
 
 }
-.botao_lixeira{
-    width: 2%;
+.lixeira{
+    width: 13%;
     height:20px;
-    background-image: url(../assets/lixeira.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
 }

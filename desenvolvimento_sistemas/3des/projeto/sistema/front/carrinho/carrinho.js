@@ -7,10 +7,9 @@ const tbody = document.querySelector("#tbody");
 //     }
 
 
-const dados = JSON.parse(localStorage.getItem("dados"));
+let dados = JSON.parse(localStorage.getItem("dados"));
 dados.forEach(element => {
     if (element != undefined) {
-        tbody.innerHTML = ""
             console.log(element);
             const tr = document.createElement("tr");
             tr.className = "tr";
@@ -25,9 +24,7 @@ dados.forEach(element => {
             psabor.innerHTML = element.descricao.sabor;
             psabor.classList = "t";
 
-            // pnome.addEventListener("click", ()=>{
-            //      cardapio(id);
-            //  })
+           
             const pdescricao = document.createElement("td");
             pdescricao.innerHTML = element.descricao.preco;
             pdescricao.classList = "t";
@@ -40,15 +37,25 @@ dados.forEach(element => {
             pqtd.innerHTML = element.quantidade;
             pqtd.classList = "t";
 
-            const botao_lixeira = document.createElement("button");
-            botao_lixeira.className = "botao_lixeira";
+            const tdimg = document.createElement("td");
+            tdimg.classList = "t"
+            const lixeira = document.createElement("img");
+            lixeira.src = "../assets/lixeira2.png";
+            lixeira.classList="lixeira"
             
+             lixeira.addEventListener("click", ()=>{
+                const novoDados = dados.filter(item => item.id !== pid);
+                dados = novoDados;
+                console.log(dados)
+             })
+
             tr.appendChild(pid);
             tr.appendChild(psabor);
             tr.appendChild(ppreco);
             tr.appendChild(pdescricao);
             tr.appendChild(pqtd);
-            tr.appendChild(botao_lixeira);
+            tdimg.appendChild(lixeira);
+            tr.appendChild(tdimg)
             tbody.appendChild(tr);
         }    
 }) 
