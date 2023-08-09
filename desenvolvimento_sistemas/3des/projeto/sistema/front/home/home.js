@@ -92,7 +92,11 @@ fetch('http://localhost:3000/listar')
                     dados.descricao = element
                     dados.quantidade = quantidade
                     let flag = false
-                    const items = localStorage.getItem("dados")
+                    let items = 0
+                    if(dados.quantidade>0){
+                         items = localStorage.getItem("dados")
+                    }
+                    console.log(items)
                     if (items) {
                         const newItems = JSON.parse(items);
 

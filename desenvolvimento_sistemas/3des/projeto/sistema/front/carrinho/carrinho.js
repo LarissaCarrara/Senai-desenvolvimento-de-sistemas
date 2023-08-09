@@ -60,7 +60,16 @@ dados.forEach(element => {
         }    
 }) 
 
-
+function finalizar(){
+//     fetch('http://localhost:3000/listar')
+//     .then(resp => {
+//         return resp.json();
+//     })
+//     .then(data => {
+//         if (data != undefined) {
+//         }
+//     })
+}
 
        
 
