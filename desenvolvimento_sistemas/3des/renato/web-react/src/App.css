@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+#tudo{
+  width: 100vw;
+  height: 100vh;
+}
+.header {
+  min-height: 20vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo{
+  width: 150px;
+  height: 50px;
+  padding: 0;
+}
+.div_logo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 300px;
+}
+.links{
+  display: flex;
+}
+.text{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.section{
+  width: 100vw;
+  height: 80vh;
+  background-color: blue;
+}
