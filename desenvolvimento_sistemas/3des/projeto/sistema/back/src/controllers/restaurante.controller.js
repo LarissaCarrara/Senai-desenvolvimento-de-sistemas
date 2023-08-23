@@ -30,13 +30,16 @@ const cadastrar = async (req, res) => {
 
 const login = (req, res) => {
     const { email, senha } = req.body;
+    console.log(email,senha)
     const query = `SELECT * FROM cliente WHERE email = '${email}'`;
     con.query(query, async (err, rows) => {
         if (err || rows.length == 0) {
             res.status(400).json({
                 error: true,
                 log: err || 'Usuário não encontrado.'
+               
             }).end();
+            console.log(err)
         } else {
             const hash = rows[0].senha;
             bcrypt.compare(senha, hash, (compareErr, isMatch) => {
