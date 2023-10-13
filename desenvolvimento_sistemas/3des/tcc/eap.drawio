@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2023-09-28T14:19:48.244Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Agency/98.8.2247.48" etag="qI3CGaK9L8cfbRzYIpTQ" version="21.7.5" type="device">
+  <diagram name="Página-1" id="K-mc163CdZYnD7BO4_rc">
+    <mxGraphModel dx="1518" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-1" value="what&#39;s i see" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="390" y="50" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-2" value="Documentação" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-3" value="Banco de dados" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-4" value="Front end" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="540" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-5" value="backend&lt;br&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-6" value="testes" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="960" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-7" value="Relatório técnico&amp;nbsp;descrevem o funcionamento do sistema&lt;br&gt;&amp;nbsp;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-8" value="representar visualmente a estrutura de um banco de dados, especificando as entidades (tabelas), os relacionamentos entre essas entidades e os atributos (campos) que compõem cada entidade." style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="270" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-9" value="interface com a qual os usuários interagem para visualizar e interagir com os dados e funcionalidades do sistema." style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="510" y="270" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sjmGVJTW6a_zNX7uMclo-11" value="lógica de negócios, o processamento de dados, o armazenamento de informações e a comunicação com o front-end (a interface com a qual os usuários interagem diretamente) e outras partes do sistema." style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="720" y="270" width="190" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
