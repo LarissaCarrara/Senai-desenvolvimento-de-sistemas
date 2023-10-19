@@ -20,7 +20,7 @@ body{
 }
 
 .div_logo{
-    width: 50vw;
+    width: 50%;
 }
 
 .p_logo{
@@ -56,7 +56,7 @@ body{
 }
 
 section{
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -64,8 +64,9 @@ section{
 }
 .text{
 color: #897b69;
-font-size: 15px;
+font-size: 17px;
 margin: 6px;
+text-align: justify;
 }
 
 header{
@@ -95,10 +96,19 @@ header{
     color: #897b69;
 }
 .card_conteudo{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.526);
     width: 80vw;
     margin-bottom: 20px;
 }
 .arrow{
     display: flex ;
+}
+.conteudo{
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+a{
+    color: #897b69;
 }

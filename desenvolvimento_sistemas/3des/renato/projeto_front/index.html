@@ -16,10 +16,10 @@
             <p class="p_logo">TechInfo</p>
         </div>
         <div class="div_title">
-            <p class="title"><a href="#conteudo1">Método Tradicional</a></p>
-            <p class="title">Métodos Ágeis</p>
-            <p class="title">Métodos Híbridos</p>
-            <p class="title">bushido</p>
+            <p onclick="cont1()" class="title"><a href="#conteudo1">Método Tradicional</a></p>
+            <p onclick="cont2()" class="title"><a href="#conteudo2">Métodos Ágeis</a></p>
+            <p onclick="cont3()"  class="title"><a href="#conteudo3">Métodos Híbridos</a></p>
+            <p onclick="cont4()" class="title"><a href="#conteudo4">bushido</a></p>
         </div>
     </header>
 
@@ -105,133 +105,169 @@
     <header>
         <div class="header">
 
-            <div id="conteudo1">
+            <div id="conteudo1" class="conteudo">
 
                 <div class="card_conteudo accordion">
-                    <div class="arrow" data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
-                    aria-controls="collapse1">
-                    <span>&#x25BC;</span> <!-- Ícone de flecha para baixo -->
-                    <p class="titulo">Metodologias Tradicionais:</p>
-                </div>
-                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent=".accordion">
-                    <!-- Conteúdo da div 1 que será expandido/recolhido -->
-                    <p class="text">Os métodos tradicionais, muitas vezes referidos como metodologias em cascata, seguem
-                        uma
-                        abordagem sequencial e linear para o desenvolvimento de projetos. Esse modelo presume que os
-                        requisitos
-                        do projeto estão bem definidos e estáveis desde o início. As fases do projeto, como
-                        planejamento,
-                        design, implementação, teste e manutenção, são realizadas de forma ordenada, com uma fase
-                        dependendo do
-                        sucesso da anterior. Embora ofereçam uma estrutura organizada e detalhada, esses métodos podem
-                        ser
-                        inflexíveis quando se trata de lidar com mudanças nos requisitos do projeto durante seu
-                        desenvolvimento, o que pode ser uma desvantagem em ambientes de negócios dinâmicos.</p>
+                    <div class="arrow" id="seta-conteudo1" data-toggle="collapse" data-target="#collapse1"
+                        aria-expanded="true" aria-controls="collapse1">
+                        <span>&#x25BC;</span> <!-- Ícone de flecha para baixo -->
+                        <p class="titulo">Metodologias Tradicionais:</p>
+                    </div>
+                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent=".accordion">
+                        <!-- Conteúdo da div 1 que será expandido/recolhido -->
+                        <p class="text">Os métodos tradicionais, muitas vezes referidos como metodologias em cascata,
+                            seguem
+                            uma
+                            abordagem sequencial e linear para o desenvolvimento de projetos. Esse modelo presume que os
+                            requisitos
+                            do projeto estão bem definidos e estáveis desde o início. As fases do projeto, como
+                            planejamento,
+                            design, implementação, teste e manutenção, são realizadas de forma ordenada, com uma fase
+                            dependendo do
+                            sucesso da anterior. Embora ofereçam uma estrutura organizada e detalhada, esses métodos
+                            podem
+                            ser
+                            inflexíveis quando se trata de lidar com mudanças nos requisitos do projeto durante seu
+                            desenvolvimento, o que pode ser uma desvantagem em ambientes de negócios dinâmicos.</p>
                     </div>
                 </div>
             </div>
-                
-            <div class="card_conteudo accordion">
-                <div class="arrow" data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
-                    aria-controls="collapse2">
-                    <span>&#x25BC;</span> <!-- Ícone de flecha para baixo -->
-                    <p class="titulo">Metodologias Ágeis:</p>
-                </div>
-                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent=".accordion">
-                    <!-- Conteúdo da div 2 que será expandido/recolhido -->
-                    <p class="text">Os métodos ágeis oferecem uma abordagem iterativa e incremental para o
-                        desenvolvimento de
-                        projetos. Eles se destacam por sua flexibilidade e capacidade de adaptação às mudanças. Em vez
-                        de
-                        seguir um plano rígido, as equipes ágeis colaboram de perto com os clientes e partes
-                        interessadas,
-                        ajustando continuamente os requisitos e entregando incrementos do produto de forma regular.
-                        Métodos
-                        ágeis populares incluem Scrum, Kanban e Extreme Programming (XP). A comunicação constante e a
-                        capacidade de resposta aos feedbacks são os pilares das metodologias ágeis, tornando-as ideais
-                        para
-                        projetos onde os requisitos estão sujeitos a mudanças frequentes.</p>
-                </div>
-            </div>
+
+            <div id="conteudo2" class="conteudo">
 
 
-            <div class="card_conteudo accordion">
-                <div class="arrow" data-toggle="collapse" data-target="#collapse3" aria-expanded="true"
-                    aria-controls="collapse3">
-                    <span>&#x25BC;</span> <!-- Ícone de flecha para baixo -->
-                    <p class="titulo">Metodologias Híbridas:</p>
-                </div>
-                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent=".accordion">
-                    <!-- Conteúdo da div 1 que será expandido/recolhido -->
-                    <p class="text">As metodologias híbridas procuram combinar o melhor dos dois mundos, incorporando
-                        elementos tanto dos métodos tradicionais quanto dos ágeis. Em uma abordagem híbrida, certas
-                        partes do projeto podem ser gerenciadas usando métodos tradicionais, enquanto outras partes são
-                        tratadas com métodos ágeis. Isso permite uma flexibilidade e personalização significativas. As
-                        organizações podem adaptar sua abordagem de acordo com as necessidades específicas de cada fase
-                        do projeto, aproveitando os benefícios da estruturação e do planejamento dos métodos
-                        tradicionais, bem como a agilidade e a capacidade de resposta dos métodos ágeis. Em resumo, a
-                        escolha entre métodos híbridos, tradicionais e ágeis depende das características do projeto, da
-                        cultura organizacional e da volatilidade dos requisitos. Projetos com requisitos bem definidos e
-                        estáveis podem se beneficiar dos métodos tradicionais, enquanto projetos que exigem
-                        flexibilidade e resposta rápida às mudanças podem encontrar nos métodos ágeis a solução ideal.
-                        Os métodos híbridos oferecem uma abordagem sob medida, permitindo que as organizações aproveitem
-                        o melhor de ambos os mundos para alcançar o sucesso em seus projetos, adaptando-se
-                        eficientemente a um ambiente de negócios em constante evolução.</p>
+                <div class="card_conteudo accordion">
+                    <div class="arrow" data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
+                        aria-controls="collapse2">
+                        <span>&#x25BC;</span> <!-- Ícone de flecha para baixo -->
+                        <p class="titulo">Metodologias Ágeis:</p>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent=".accordion">
+                        <!-- Conteúdo da div 2 que será expandido/recolhido -->
+                        <p class="text">Os métodos ágeis oferecem uma abordagem iterativa e incremental para o
+                            desenvolvimento de
+                            projetos. Eles se destacam por sua flexibilidade e capacidade de adaptação às mudanças. Em
+                            vez
+                            de
+                            seguir um plano rígido, as equipes ágeis colaboram de perto com os clientes e partes
+                            interessadas,
+                            ajustando continuamente os requisitos e entregando incrementos do produto de forma regular.
+                            Métodos
+                            ágeis populares incluem Scrum, Kanban e Extreme Programming (XP). A comunicação constante e
+                            a
+                            capacidade de resposta aos feedbacks são os pilares das metodologias ágeis, tornando-as
+                            ideais
+                            para
+                            projetos onde os requisitos estão sujeitos a mudanças frequentes.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card_conteudo accordion">
-                <div class="arrow" data-toggle="collapse" data-target="#collapse4" aria-expanded="true"
-                    aria-controls="collapse4">
-                    <span>&#x25BC;</span> <!-- Ícone de flecha para baixo -->
-                    <p class="titulo">Bushido:</p>
+            <div id="conteudo3" class="conteudo">
+
+
+                <div class="card_conteudo accordion">
+                    <div class="arrow" data-toggle="collapse" data-target="#collapse3" aria-expanded="true"
+                        aria-controls="collapse3">
+                        <span>&#x25BC;</span> <!-- Ícone de flecha para baixo -->
+                        <p class="titulo">Metodologias Híbridas:</p>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent=".accordion">
+                        <!-- Conteúdo da div 1 que será expandido/recolhido -->
+                        <p class="text">As metodologias híbridas procuram combinar o melhor dos dois mundos,
+                            incorporando
+                            elementos tanto dos métodos tradicionais quanto dos ágeis. Em uma abordagem híbrida, certas
+                            partes do projeto podem ser gerenciadas usando métodos tradicionais, enquanto outras partes
+                            são
+                            tratadas com métodos ágeis. Isso permite uma flexibilidade e personalização significativas.
+                            As
+                            organizações podem adaptar sua abordagem de acordo com as necessidades específicas de cada
+                            fase
+                            do projeto, aproveitando os benefícios da estruturação e do planejamento dos métodos
+                            tradicionais, bem como a agilidade e a capacidade de resposta dos métodos ágeis. Em resumo,
+                            a
+                            escolha entre métodos híbridos, tradicionais e ágeis depende das características do projeto,
+                            da
+                            cultura organizacional e da volatilidade dos requisitos. Projetos com requisitos bem
+                            definidos e
+                            estáveis podem se beneficiar dos métodos tradicionais, enquanto projetos que exigem
+                            flexibilidade e resposta rápida às mudanças podem encontrar nos métodos ágeis a solução
+                            ideal.
+                            Os métodos híbridos oferecem uma abordagem sob medida, permitindo que as organizações
+                            aproveitem
+                            o melhor de ambos os mundos para alcançar o sucesso em seus projetos, adaptando-se
+                            eficientemente a um ambiente de negócios em constante evolução.</p>
+                    </div>
                 </div>
-                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent=".accordion">
-                    <!-- Conteúdo da div 1 que será expandido/recolhido -->
-                    <p class="text">O Bushido é um código de ética e conduta seguido pelos samurais no Japão feudal.
-                        Traduzido como "Caminho do Guerreiro", o Bushido enfatiza valores como coragem, honra, lealdade,
-                        retidão, compaixão, respeito e integridade. Os samurais não eram apenas guerreiros habilidosos,
-                        mas também eram esperados para serem pessoas virtuosas, vivendo de acordo com esses princípios.
-                        O código do Bushido influenciou não apenas a conduta dos samurais em batalha, mas também suas
-                        interações sociais e pessoais, tornando-se um padrão moral para a sociedade japonesa.</p>
+            </div>
 
-                    <p class="titulo">Na área de TI, há semelhanças notáveis com os princípios do Bushido:</p>
-                    <ol class="ol">
-                        <li><b>Coragem</b></li>
-                        <p><u>Bushido:</u> Os samurais eram conhecidos por sua coragem no campo de batalha, enfrentando
-                            situações perigosas com bravura.
-                            <br><u>TI:</u> Os profissionais muitas vezes enfrentam desafios complexos, requerendo
-                            coragem para enfrentar problemas difíceis, tomar decisões importantes e implementar soluções
-                            inovadoras.
-                        </p>
+            <div id="conteudo4" class="conteudo">
 
-                        <li><b>Honra e Integridade:</b></li>
-                        <p><u>Bushido:</u> A honra era de extrema importância para os samurais, que mantinham sua
-                            integridade pessoal e profissional a todo custo.
-                            <br><u>TI:</u> Profissionais de TI devem aderir a padrões éticos e manter a integridade ao
-                            lidar com dados sensíveis e informações confidenciais dos usuários e da empresa.
-                        </p>
 
-                        <li><b> Lealdade:</b></li>
-                        <p><u>Bushido:</u> Os samurais eram leais aos seus mestres e clãs, mostrando devoção inabalável.
-                            <br><u>TI:</u> A lealdade à equipe e à empresa é essencial para o trabalho colaborativo, a
-                            segurança dos dados e o sucesso dos projetos.
-                        </p>
+                <div class="card_conteudo accordion">
+                    <div class="arrow" data-toggle="collapse" data-target="#collapse4" aria-expanded="true"
+                        aria-controls="collapse4">
+                        <span>&#x25BC;</span> <!-- Ícone de flecha para baixo -->
+                        <p class="titulo">Bushido:</p>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent=".accordion">
+                        <!-- Conteúdo da div 1 que será expandido/recolhido -->
+                        <p class="text">O Bushido é um código de ética e conduta seguido pelos samurais no Japão feudal.
+                            Traduzido como "Caminho do Guerreiro", o Bushido enfatiza valores como coragem, honra,
+                            lealdade,
+                            retidão, compaixão, respeito e integridade. Os samurais não eram apenas guerreiros
+                            habilidosos,
+                            mas também eram esperados para serem pessoas virtuosas, vivendo de acordo com esses
+                            princípios.
+                            O código do Bushido influenciou não apenas a conduta dos samurais em batalha, mas também
+                            suas
+                            interações sociais e pessoais, tornando-se um padrão moral para a sociedade japonesa.</p>
 
-                        <li><b> Compromisso com a Melhoria Contínua:</b></li>
-                        <p><u>Bushido:</u> Os samurais buscavam aperfeiçoar constantemente suas habilidades em artes
-                            marciais e conhecimento.
-                            <br><u>TI:</u> Profissionais de TI precisam estar continuamente atualizados com as últimas
-                            tecnologias e tendências para fornecer soluções eficazes e inovadoras.
-                        </p>
+                        <p class="titulo">Na área de TI, há semelhanças notáveis com os princípios do Bushido:</p>
+                        <ol class="ol">
+                            <li><b>Coragem</b></li>
+                            <p><u>Bushido:</u> Os samurais eram conhecidos por sua coragem no campo de batalha,
+                                enfrentando
+                                situações perigosas com bravura.
+                                <br><u>TI:</u> Os profissionais muitas vezes enfrentam desafios complexos, requerendo
+                                coragem para enfrentar problemas difíceis, tomar decisões importantes e implementar
+                                soluções
+                                inovadoras.
+                            </p>
 
-                        <li><b> Respeito:</b></li>
-                        <p><u>Bushido:</u> Os samurais mostravam respeito pelos outros, independentemente de seu status
-                            social.
-                            <br><u>TI:</u> O respeito pelas opiniões e habilidades dos colegas é crucial para um
-                            ambiente de trabalho saudável e para o desenvolvimento eficaz de soluções em equipe.
-                        </p>
-                    </ol>
+                            <li><b>Honra e Integridade:</b></li>
+                            <p><u>Bushido:</u> A honra era de extrema importância para os samurais, que mantinham sua
+                                integridade pessoal e profissional a todo custo.
+                                <br><u>TI:</u> Profissionais de TI devem aderir a padrões éticos e manter a integridade
+                                ao
+                                lidar com dados sensíveis e informações confidenciais dos usuários e da empresa.
+                            </p>
+
+                            <li><b> Lealdade:</b></li>
+                            <p><u>Bushido:</u> Os samurais eram leais aos seus mestres e clãs, mostrando devoção
+                                inabalável.
+                                <br><u>TI:</u> A lealdade à equipe e à empresa é essencial para o trabalho colaborativo,
+                                a
+                                segurança dos dados e o sucesso dos projetos.
+                            </p>
+
+                            <li><b> Compromisso com a Melhoria Contínua:</b></li>
+                            <p><u>Bushido:</u> Os samurais buscavam aperfeiçoar constantemente suas habilidades em artes
+                                marciais e conhecimento.
+                                <br><u>TI:</u> Profissionais de TI precisam estar continuamente atualizados com as
+                                últimas
+                                tecnologias e tendências para fornecer soluções eficazes e inovadoras.
+                            </p>
+
+                            <li><b> Respeito:</b></li>
+                            <p><u>Bushido:</u> Os samurais mostravam respeito pelos outros, independentemente de seu
+                                status
+                                social.
+                                <br><u>TI:</u> O respeito pelas opiniões e habilidades dos colegas é crucial para um
+                                ambiente de trabalho saudável e para o desenvolvimento eficaz de soluções em equipe.
+                            </p>
+                        </ol>
+                    </div>
                 </div>
 
             </div>
@@ -262,6 +298,7 @@
         });
     </script>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
