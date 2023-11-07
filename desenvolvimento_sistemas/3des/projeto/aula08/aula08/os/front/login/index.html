@@ -11,18 +11,31 @@
 
 <body>
     <header>
-        <h1>OS (Ordens de Serviço)</h1>
+        <h1 class="h">OS (Ordens de Serviço)</h1>
     </header>
     <main>
-        <form id="login">
-            <label for="matricula">Matrícula:</label>
-            <input type="number" name="matricula" required>
-            <label for="pin">PIM:</label>
-            <input type="password" name="pin" required>
-            <input type="button" onclick="cadastro.classList.remove('oculto')" value="Cadastro">
-            <input type="submit" value="Login">
+        <form class="login" id="login">
+            <div id="divlogin">
+                <p id="plogin" class="corclara">Login</p>
+            </div>
+            <div id="divdados">
+                <div class="divinput">
+                    <label for="matricula" class="label corclara">Matrícula:</label>
+                    <input type="number" class="input" name="matricula" required> 
+                </div>
+                <div class="divinput">
+                    <label for="pin" class="label corclara">PIM:</label>
+                    <input type="password" class="input" name="pin" required>
+                </div>
+
+                <div id="divbotoes">
+                    <input type="button" class="button corclara" onclick="toggleModal()" value="Cadastro">
+                    <input type="submit" class="button corclara" value="Login">
+                </div>
+
+            </div>
         </form>
-        <section id="cadastro" class="modal oculto">
+        <section id="cadastro" class="modal cadastro oculto">
             <form id="formCadastro">
                 <label for="matricula">Matrícula:</label>
                 <input type="text" name="matricula" required>
@@ -36,15 +49,15 @@
                 <input type="password" name="pin" required>
                 <label for="confirmPin">Confirma PIM:</label>
                 <input type="password" name="confirmPin" required>
-                <input type="button" value="Cancelar" onclick="cadastro.classList.add('oculto')">
+                <input type="button" value="Cancelar" onclick="toggleModal()">
                 <input type="submit" value="Salvar">
             </form>
         </section>
     </main>
     <footer>
         <p id="msg"></p>
-        <h2>Sistema de Gestão de Ordens de Serviço</h2>
-        <h3>By Professor Wellington</h3>
+        <h2 class="h">Sistema de Gestão de Ordens de Serviço</h2>
+        <h3 class="h">By Professor Wellington</h3>
     </footer>
 </body>
 <script src="script.js"></script>
