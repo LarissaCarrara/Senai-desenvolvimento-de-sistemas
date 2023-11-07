@@ -15,13 +15,13 @@
     </header>
     <main>
         <form class="login" id="login">
-            <div id="divlogin">
-                <p id="plogin" class="corclara">Login</p>
+            <div class="divlogin">
+                <p class="ptit" class="corclara">Login</p>
             </div>
-            <div id="divdados">
+            <div class="divdadoslogin">
                 <div class="divinput">
                     <label for="matricula" class="label corclara">Matrícula:</label>
-                    <input type="number" class="input" name="matricula" required> 
+                    <input type="number" class="input" name="matricula" required>
                 </div>
                 <div class="divinput">
                     <label for="pin" class="label corclara">PIM:</label>
@@ -37,20 +37,41 @@
         </form>
         <section id="cadastro" class="modal cadastro oculto">
             <form id="formCadastro">
-                <label for="matricula">Matrícula:</label>
-                <input type="text" name="matricula" required>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" required>
-                <label for="cargo">Cargo:</label>
-                <input type="text" name="cargo" required>
-                <label for="setor">Setor:</label>
-                <input type="text" name="setor" required>
-                <label for="pin">PIM:</label>
-                <input type="password" name="pin" required>
-                <label for="confirmPin">Confirma PIM:</label>
-                <input type="password" name="confirmPin" required>
-                <input type="button" value="Cancelar" onclick="toggleModal()">
-                <input type="submit" value="Salvar">
+
+                <div class="divlogin">
+                    <p class="ptit" class="corclara">Cadastro</p>
+                </div>
+                <div class="divdadoscadastro">
+                    <div class="divinput">
+                        <label for="matricula" class="label corclara">Matrícula:</label>
+                        <input type="text" class="input" name="matricula" required>
+                    </div>
+                    <div class="divinput">
+                        <label for="nome" class="label corclara">Nome:</label>
+                        <input type="text" class="input" name="nome" required>
+                    </div>
+                    <div class="divinput">
+                        <label for="cargo" class="label corclara">Cargo:</label>
+                        <input type="text" class="input" name="cargo" required>
+                    </div>
+                    <div class="divinput">
+                        <label for="setor" class="label corclara">Setor:</label>
+                        <input type="text" class="input" name="setor" required>
+                    </div>
+                    <div class="divinput">
+                        <label for="pin" class="label corclara">PIM:</label>
+                        <input type="password" class="input" name="pin" required>
+                    </div>
+                    <div class="divinput">
+                        <label for="confirmPin"  class="label corclara">Confirma PIM:</label>
+                        <input type="password" class="input" name="confirmPin" required>
+                    </div>
+
+                </div>
+                <div id="divbotoes">
+                    <input type="button" class="button corclara" value="Cancelar" onclick="toggleModal()">
+                    <input type="submit" class="button corclara" value="Salvar">
+                </div>
             </form>
         </section>
     </main>

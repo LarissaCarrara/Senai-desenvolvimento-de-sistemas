@@ -11,8 +11,10 @@
 
 <body>
     <header>
-        <h1>OS (Ordens de Serviço)</h1>
-        <div>
+        <div class="divtit">
+            <h1>OS (Ordens de Serviço)</h1>
+        </div>
+        <div class="user">
             <div id="msg">Mensagens do sistema:</div>
             <div>
                 <img id="imgPerfil" src="../assets/do-utilizador.png" alt="ìcone de usuário"
@@ -21,16 +23,19 @@
             </div>
         </div>
     </header>
-    <nav id="menu">
-        <button onclick="novaOS.classList.remove('oculto')">Nova OS</button>
-    </nav>
-    <nav id="user" class="oculto">
-        <ul onclick="user.classList.add('oculto')">
-            <button onclick="perfil.classList.remove('oculto')">Perfil</button>
-            <button onclick="sair()">Sair</button>
-        </ul>
-    </nav>
+
+    <div class="perfil">
+        <nav id="user" class="oculto">
+            <ul onclick="user.classList.add('oculto')">
+                <button class="button corclara" onclick="perfil.classList.remove('oculto')">Perfil</button>
+                <button class="button corclara" onclick="sair()">Sair</button>
+            </ul>
+        </nav>
+    </div>
     <main>
+        <nav id="menu">
+            <button class="button corclara" onclick="novaOS.classList.remove('oculto')">Nova OS</button>
+        </nav>
         <section id="oss"></section>
 
         <section id="perfil" class="modal oculto">

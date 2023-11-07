@@ -1,5 +1,76 @@
 @import url(../style.css);
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .oculto {
     display: none;
+}
+body{
+    background-color: rgba(196, 191, 176, 0.325);
+}
+header{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.divtit{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imgPerfil{
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#nomeColaborador{
+    margin-left: 10px;
+}
+.user{
+    width: 300px;
+    border-left: 2px solid  #97532a;;
+    border-right: 2px solid  #97532a;;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perfil{
+    margin-top: 20px;
+}
+.corclara{
+    color: #b08e61;
+}
+.button{
+    width: 130px;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15PX;
+    margin-left: 10px;
+}
+#user{
+    width: 300px;
+    
+}
+
+footer{
+    width: 100vw;
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+main{
+    margin-top: 60px;
 }

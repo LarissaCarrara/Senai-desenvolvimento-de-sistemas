@@ -1,24 +1,24 @@
 USE os;
 
-LOAD DATA INFILE 'D:/wellington/pessoal/arquivos/0_senai/2023/04-projetos/os/dados/colaboradores.csv'
+LOAD DATA INFILE 'C:/Users/laris/OneDrive/Documentos/Senai-desenvolvimento-de-sistemas/desenvolvimento_sistemas/3des/projeto/aula08/aula08/os/dados/colaboradores.csv'
 INTO TABLE colaborador
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'D:/wellington/pessoal/arquivos/0_senai/2023/04-projetos/os/dados/oss.csv'
+LOAD DATA INFILE 'C:/Users/laris/OneDrive/Documentos/Senai-desenvolvimento-de-sistemas/desenvolvimento_sistemas/3des/projeto/aula08/aula08/os/dados/oss.csv'
 INTO TABLE os
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'D:/wellington/pessoal/arquivos/0_senai/2023/04-projetos/os/dados/comentarios.csv'
+LOAD DATA INFILE 'C:/Users/laris/OneDrive/Documentos/Senai-desenvolvimento-de-sistemas/desenvolvimento_sistemas/3des/projeto/aula08/aula08/os/dados/comentarios.csv'
 INTO TABLE comentario
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 -- ALTERANDO AS HORAS IMPORTADAS COMO 000000 PARA NULL

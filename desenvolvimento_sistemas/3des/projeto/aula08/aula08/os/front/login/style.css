@@ -24,7 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
 .h{
     color:  #97532a;
 }
@@ -40,24 +40,28 @@ header{
     border-radius: 10px;
 }
 
-#divlogin{  
+.divlogin{  
     width: 100%;
     height: 20%;
     display: flex;
     align-items: end;
     justify-content: center;
 }
-#plogin{
+.ptit{
     font-size: 30px;
 }
 .corclara{
     color: #b08e61;
 }
-#divdados{
+.divdadoslogin{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    
+}
+.divdadoscadastro{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;   
 }
 
 .label{
@@ -67,6 +71,7 @@ header{
 .input{
     width: 250px;
     height: 25px;
+    margin-bottom: 5px;
     border-radius: 5px;
     border-top: none;
     border-left: none;
