@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(129, 165, 181, 0.818);
+}
+section{
+    width: 30vw;
+    height: 40vh;
+    background-color:  rgb(129, 165, 181);
+    border-radius: 10px;
+}
+.login{
+    width: 100%;
+    height: 100%;
+}
+.textlogin{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+#tit-login{
+    color: white;
+}
+.input-login{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.input{
+    height:20%;
+    width: 40%;
+    margin-bottom: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid rgb(2, 5, 100);
+    background-color: transparent;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.input::placeholder {
+    color: white;
+}
+.botao-login{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button-entrar{
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(29, 122, 204, 0.389);
+    color: white;
+}

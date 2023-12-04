@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sala de aula</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body onload="carregaDados()">
+    <header>
+        <h1 class="tit" id="nomeprof"></h1>
+        <h2 class="tit" onclick="sair()">sair</h2>
+    </header>
+    <div class="novaturma">
+        <input type="button" value="Nova turma" id="btn-novaturma" onclick="exibirModal()">
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h1 class="tit-novaturma">Nova turma</h1>
+            <div class="conteudomodal">
+                <input type="text" placeholder="Nome da turma" class="input-modal" id="novaturma" required>
+                <input type="button" value="Adicionar" class="btn-modal" onclick="cadastrar()">
+            </div>
+        </div>
+    </div>
+
+    <section>
+    </section>
+</body>
+<script src="./home.js"></script>
+</html>
